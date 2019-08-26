@@ -1,0 +1,50 @@
+# time-dependend stuff
+# tau is the factor that is multiplied with the grid-size h
+tau         1.0
+epsilon     5.0
+
+# graph (0=no, 1=yes)
+graph 1
+
+# number timesteps and save every "timeOffset"th image
+timesteps   30001
+timeOffset  100
+
+# data stuff
+
+image pics/Rekonstruktion/boatsReconstr.pgm
+mask  pics/Rekonstruktion/boatsCutOutMask.pgm
+saveName pics/RekonstrResults/boatsCutOutTauHGraph
+
+
+#image pics/RekonstrResults/lenaCutOutTauHGraph_250.pgm
+#lenaCutOutNoisyBG.pgm
+#mask pics/Rekonstruktion/lenaCutOutBigMask.pgm
+#saveName pics/RekonstrResults/lenaCutOutTauHGraph2
+
+#image pics/RekonstrResults/square3TauHGraph2_2000.pgm
+#pics/Rekonstruktion/square3StartImgNoisyBG.pgm
+#mask pics/Rekonstruktion/square3Mask.pgm
+#saveName pics/RekonstrResults/square3TauHGraph3
+
+#image pics/Rekonstruktion/littleSquare129.pgm
+#mask pics/Rekonstruktion/littleSquare129.pgm
+#saveName pics/RekonstrResults/onlySquare
+
+#image pics/RekonstrResults/BG128SquareTau2.0Eps5.0BigEdges_1000.pgm
+#pics/Rekonstruktion/squareStartImgBigEdgesBG128.pgm
+#mask pics/Rekonstruktion/squareBoundaryMaskBigEdges.pgm
+#saveName pics/RekonstrResults/squareTau1.0GraphNoisyBGBigEdges
+#saveName pics/RekonstrResults/BG128SquareTau2.0Eps5.0BigEdges2
+
+#image pics/Rekonstruktion/squareStartImg5.pgm
+#mask pics/Rekonstruktion/squareBoundaryMask5.pgm
+#saveName pics/RekonstrResults/squareTau1.0Eps5.0BG128Mask5
+
+#image pics/Rekonstruktion/lenaReconstr.pgm
+#mask pics/Rekonstruktion/lenaBoundaryMask5.pgm
+#saveName pics/RekonstrResults/lenaTau2.0Eps5.0BG128Mask5
+
+#image pics/Rekonstruktion/boatsReconstr.pgm
+#mask pics/Rekonstruktion/boatsBoundaryMask.pgm
+#saveName pics/RekonstrResults/boats_Tau1.0_Eps5.0_BG128fs=5

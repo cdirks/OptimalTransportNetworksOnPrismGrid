@@ -1,0 +1,6 @@
+//! @dir
+//!
+//! @brief Implementation of "Mumford-Shah Model for One-to-One Edge Matching" - http://dx.doi.org/10.1109/TIP.2007.906277
+//!        and "A Variational Framework for Joint Image Registration, Denoising and Edge Detection" - http://dx.doi.org/10.1007/3-540-32137-3_50
+//!
+//! @author Berkels, Han

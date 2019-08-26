@@ -1,0 +1,26 @@
+depth 7
+# grid depth of the computational domain
+
+saveDirectory   results
+
+VFFileName      benard/benard_test.dat
+
+saveOffset      1
+numSaveFirst    1000
+
+# gamma weights the perimiter length term
+gamma           0.0002
+
+numSteps        1000
+
+outerSteps      1
+# outerSteps is the number of times epsilon (see below) will be halved
+
+epsilon         0.001
+# epsilon is the regularization parameter of the Heavyside function
+epsilonMCM      0.1
+# epsilonMCM is the regularization parameter of the MCMStiffOp used in the variation of the length term.
+
+
+# dim == 2, numLevelsetFunctions == 1
+Ab              { { 0. 0.1 -0.1 0. -0.1 0.1 } { 0. 0. 0. 0. -0.1 0.1 } }

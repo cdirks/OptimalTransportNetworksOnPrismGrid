@@ -1,0 +1,5 @@
+@HDR_INCLUDE_STRING@
+
+int main ( int, char** ) {
+  return 0;
+}

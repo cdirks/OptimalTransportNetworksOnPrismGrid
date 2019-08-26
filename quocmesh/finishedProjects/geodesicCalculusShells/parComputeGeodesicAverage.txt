@@ -1,0 +1,42 @@
+# folder where results are supposed to be stored
+destDirectory <path>
+# input data stem (relative to destDirectory!)
+averageDataStem data/<stem>
+
+# savename of average
+averageName <filename>.ply
+# savename of geodesics between input data and average
+averagePathStem geodesicPath
+
+# if initialization of geodesic paths are known
+#averagePathInitialStem <stem>
+
+# fix boundary?
+fixBoundary 1
+
+# number of input data
+numOfAvergageData 3
+# each input data is connected with average by a geodeis of length 2^l+1, where l are the cascadic levels
+cascadicLevelsInAveraging 2
+
+# geodesics are computed via alternating red-black optimization
+redBlackSteps 3
+numOfDescentSteps 500
+stopCriterion 1e-8
+
+# solver types { 0 = Cholesky, 1 = BiCholesky, 2 = LU, 3 = CG }
+solverType 2
+# should use Lagrange setup if there is no boundary to be fixed
+LagrangeSetup 1
+
+# physical parameters
+bendWeight 1.0
+tangWeight 1.0
+lengthWeight 1.0
+volWeight 1.0
+
+# console output
+logConsoleOutput 0
+showConsoleOutput 1
+
+

@@ -1,0 +1,94 @@
+# time-dependend stuff
+
+tau         0.1
+timesteps   3001
+
+# bool, whether data in each time-step should be rescaled to [0,1]
+rescale 0
+
+# save every "timeOffset" timestep
+timeOffset  50
+
+lambda 10
+
+
+image Data/MRAVolume/MRASmallCutOutThr70L7.bz2
+loadRotationName Data/MRAVolume/MRASmallCutOutThr70AxisSmoothL7
+saveName Data/MRAVolume/SmallCutThr70_L10_Tau025_GVP
+
+#image Data/Tests/BrokenLine6SD.bz2
+#loadRotationName Data/Tests/ConstantXVF
+#saveName Data/Tests/Deleteme
+
+#image Data/VolumeTestTorus/Radius002Torus5.bz2
+#loadRotationName Data/VolumeTestTorus/SmoothedVFTorus
+#saveName Data/VolumeTestTorus/EvaluationRad002Torus
+
+#image Data/2Balls/2Balls5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/2Balls/DifferentDirectionsRotVolPres
+
+#image Data/Tests/TubeOrig5.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/Tests/TubeGlobVP5
+
+#image Data/Sphere/SphereOrig.bz2
+#loadRotationName Data/Torus5/rotation5
+#saveName Data/Tests/SphereEllipsoidTest
+
+#image Data/Tests/xAxisLine5Smooth.bz2
+#loadRotationName Data/Torus5/rotation5
+#saveName Data/Tests/RotGlobVPxAxisLine
+
+#image Data/StraitJunction/Ausgangsbild.bz2
+#loadRotationName Data/StraitJunction/smooth2_rotationSJ6Fw7
+#saveName Data/StraitJunction/RotVolPresSJVF6
+
+#image Data/TolgaDataKlein/Data65Smooth.bz2
+#loadRotationName Data/TolgaDataKlein/smooth_rotation65Fw12
+#saveName  Data/TolgaDataKlein/RotWSVolPresData65
+
+
+#image Data/SimpleTorus/SmoothedSimpleTorusOrig5.bz2
+#loadRotationName Data/Torus5/rotation5
+#saveName Data/SimpleTorus/SimpleTorusWSRot
+
+#image Data/SimpleTorus/SmoothedSimpleTorusOrig6.bz2
+#loadRotationName Data/Torus/HEq_rotation6Fw15
+#saveName Data/SimpleTorus/HEqLevel6SimpleTorusWSRot
+
+#image Data/Diagonale/NoisyDiag5Smooth.bz2
+#image Data/Diagonale/OnlyCalcDirectionDiagSmoothVolPresRotWS_150.bz2
+#loadRotationName Data/Diagonale/SmoothedNoisyDiagRotation5Fw10
+#saveName Data/Diagonale/OnlyCalcDirectionDiagSmoothVolPresRotWS2
+
+#image Data/TubeDiag/TDiagOrig5.bz2
+#loadRotationName Data/Diagonale/SmoothedNoisyDiagRotation5Fw10
+#loadRotationName Data/Diagonale/NoisyDiagRotation5Smoot
+#saveName Data/Tests/NeuWaagerechtTubeDiagRotVolPresWS5
+
+# ********** cool, this works: **********************
+#image Data/SimpleArk/SmoothedSimpleArkOrig5.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/SimpleArk/NewArkRotVolPres
+
+#image Data/SimpleArk/SmoothedSimpleArkOrig6.bz2
+#loadRotationName Data/Ark/smooth_rotation6Fw10
+#saveName Data/SimpleArk/Level6SimpleArkWSRot
+
+#image Data/Ark/NoisyArk5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/Ark/ArkFw10SmoothWSRot
+
+#image Data/Torus5/NoisyTorusOrig5.bz2
+#saveName Data/Torus5/NoisyTorusWSRotatedIsotrTest
+#loadRotationName Data/Torus5/rotation5
+
+#image Data/TubeDiag/NoisyTube5.bz2
+#loadRotationName Data/Diagonale/NoisyDiagRotation5Smooth
+#saveName Data/TubeDiag/TDiagWSRotated
+
+
+#image  Data/Diagonale/DiagOrig5.bz2
+#saveName Data/Diagonale/DiagWSRotated
+#loadRotationName Data/Diagonale/rotation5

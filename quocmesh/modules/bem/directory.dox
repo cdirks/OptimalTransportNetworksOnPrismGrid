@@ -1,0 +1,8 @@
+/** \namespace bm
+ *  \brief Code for boundary element management in 2D.
+ *  See Module Documentation \ref bemdoc.
+ */
+
+//! @dir
+//! @brief Code for boundary element management in 2D.
+//! See Module Documentation @ref bemdoc.

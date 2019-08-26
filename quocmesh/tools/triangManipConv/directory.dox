@@ -1,0 +1,14 @@
+//! @dir
+//!
+//! @brief Executables to compute signed distance fncs and to convert several types of files
+//!
+//! There are executables to convert:  {obj,off,qc-levelset fnc}->ply; ply->{povray, qc-levelset fnc}; off->UD-ply;
+//! Remark: when the ouput is ply, files are often converted to aol::triangMesh first.
+//!
+//! Moreover signed distance fncs can be computed in {2D, 3D} as well as some rotation and scaling routines are available.
+//! Finally there is an integration funtion to compute the integral of a 3D-function over the $0$-level-set of another 3D-function.
+//!
+//! The name indicates the benefit of the cpp-file, usage is demonstrated when executing the file without any arguments.
+//!
+//! @author von Deylen, Nemitz, Wirth et al.
+

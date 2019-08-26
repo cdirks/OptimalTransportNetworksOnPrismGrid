@@ -1,0 +1,24 @@
+GraphicPs = {
+	use_colors = 1;
+        patch_bounds  = 0;
+        optimal_rotate  = 0;
+        optimal_stretch  = 0;
+        paper_height = 843;
+        paper_width = 596;
+        paper_margin = 72;
+        draw_cutting_lines = 0;
+        eps = 0;
+        specular_correction = 1.000000;
+        linewidth = 0.400000;
+        invert_colors = 0;
+        black_lines = 0;
+        huge_patch_outline_mode = 0;
+        no_cutting_check = 0;
+        gouraud = 1;
+        obscure = 1;
+        square_bndbox = 0;
+        raw_clipping = 0;
+        depthsort_tolerance_factor = 0.010000;
+        rgb_to_gray = 0.300000 0.590000 0.110000;
+        filename = "grape";
+}

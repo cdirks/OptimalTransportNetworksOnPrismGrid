@@ -1,0 +1,23 @@
+
+problemtype          BranchedTransport
+initialgridlevelxy   3
+initialgridlevelz    2
+numrefinements       8
+maximalgridlevelxy   7
+maximalgridlevelz    3
+maxiter              10000
+maxiterfinalrun      50000
+maxiterproject       10
+tol                  1e-7
+tolproject           1e-7
+epsilon              0.5
+a                    1e10
+taufactor            1
+refinementtol        0.15
+example              1To2_quadratic_boundary
+stoppingcriterion    PrimalDualGap
+refinementcriterion  LocalGradient
+preconditioning      1
+
+
+

@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief Denoises an image with the Rudon Osher Fatemi model.
+//!
+//! Denoises an image with the Rudon Osher Fatemi model. The minimization approach used here
+//! is based on a dualization technique and was propsed by Antonin Chambolle
+//! in {An Algorithm for Total Variation Minimization and Applications}.
+//!
+//! @author Berkels

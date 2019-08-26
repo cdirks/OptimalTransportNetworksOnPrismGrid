@@ -1,0 +1,18 @@
+input-image ../testdata/image_129.pgm 
+
+saveDirectory   output/
+
+saveOffset      10
+numSaveFirst    0
+
+# gamma weights the perimiter length term
+gamma           0.005
+#Cameraman (quadratic Esedoglu model):
+#gamma           1.2
+
+numSteps        10000
+
+epsilon         0.001
+# epsilon is the regularization parameter of the Heaviside function (not used in the quadratic Esedoglu model)
+epsilonMCM      0.1
+# epsilonMCM is the regularization parameter of the MCMStiffOp used in the variation of the length term.

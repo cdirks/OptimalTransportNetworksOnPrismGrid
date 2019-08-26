@@ -1,0 +1,43 @@
+# type of program: shape averaging with or without stress modes - 1,
+#                  displacement relaxation - 2,
+#                  stress computation - 3,
+#                  computation of modes of variation of stresses - 4
+programType 1
+
+# image data
+GridDepth      7
+numberOfImages 48
+
+# word stem of image file names
+imageFileNameTemplate ./kidneys/originalImages/image%d.bz2
+
+# Ambrosio-Tortorelli-parameters
+alpha 1
+beta  1
+nu    5
+epsFactor 1.
+
+# averaging parameters
+gamma 2e-1
+mu    2e-10
+jointSegmentationAveraging 0
+imageSmoothing 0
+
+# weights of the hyperelastic deformation energy and flag whether to assume the material homogeneous all over the domain
+volumeEnergyWeight 1
+lengthEnergyWeight 1
+constantElasticParameters 1
+
+# number of minimisation iterations and gradient descent steps
+maxIterations 10
+maxSteps 10
+
+# coarsest level of the multilevel algorithm
+coarsestLevel 4
+
+# directory, where results are to be saved
+destDirectory ./kidneys/averageHom/
+
+# if modes of variation are to be computed
+StressMode 0
+stressAmplification 0

@@ -1,0 +1,40 @@
+#reference  ../../../input/3D/patient1_ct.raw 
+#template   ../../../input/3D/patient1_mr.raw
+#reference  ../../../input/3D/patient1ref.raw
+#template   ../../../input/3D/patient1tem_translated.raw
+#reference  ../../../input/3D/Jasmin_1
+#template   ../../../input/3D/Jasmin_2
+#reference  ../../../input/3D/ct257_patient1.raw
+#template   ../../../input/3D/ct257_patient2.raw
+reference  ../../../input/3D/mri257_patient1.raw
+template   ../../../input/3D/mri257_patient2.raw
+
+#saveDirectory results/
+saveDirectory results_sym/
+
+reference_Fold D:/MedicalImageData/Jasmin/tmp/Jasmin_1_pgm/Jasmin_r_
+template_Fold  D:/MedicalImageData/Jasmin/tmp/Jasmin_2_pgm/Jasmin_t_
+
+epsilonFactor 0.5
+
+tau      1.
+alpha     2550.
+beta      1.
+nu     1.
+epsilon   0.01
+epsilonFactor 0.5
+mu      0.1
+lambda  5.
+kappa   1.
+tau_ini 1.
+sigma   0.5
+
+gradient_steps 20
+
+startLevel 3
+stopLevel 8
+precisionLevel 8
+
+checkboxWidth 32
+
+saveAllIntermidiateResults 1

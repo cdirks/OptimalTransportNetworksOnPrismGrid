@@ -1,0 +1,16 @@
+TemplateDataFile			D:/Office/2011/2011_Bonn/Data/Synthetic/MalePhantom/Generated/TriangulationSensorSamplingPoints.bin
+ReferenceDataFile			D:/Office/2011/2011_Bonn/Data/Synthetic/MalePhantom/Generated/SceneOrthogonalSampling01_closed_sdf_6.raw
+DeformedReferenceDataFile	D:/Office/2011/2011_Bonn/Data/Synthetic/MalePhantom/Generated/SceneOrthogonalSampling01_closed_sdf_6_deformed.raw
+SaveDirectory				D:/Office/2011/2011_Bonn/Data/Synthetic/MalePhantom/Generated/
+
+ReferenceDataMeshFile		D:/Office/2011/2011_Bonn/Data/Synthetic/MalePhantom/Generated/SceneOrthogonalSampling01.ply
+
+GridSize2DX 129
+GridSize2DY 129
+
+ValidateDerivative 0
+
+Kappa 500
+Lambda 0.01
+
+SolverIterations 250

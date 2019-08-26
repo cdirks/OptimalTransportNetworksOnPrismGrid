@@ -1,0 +1,13 @@
+/** 
+  *
+  * \dir
+  *
+  * \brief Performs image smoothing by TV gradient descent, either with simplicial grid and linear basis functions
+  *        or with rectilinear grid and bilinear basis functions.
+  * 
+  * Opon call from the shell, the program expects an image to be smoothed in PGM format, a real parameter
+  * mu which weights the TV norm against the fidelity term, and a number of iterations to be performed.
+  * The output is written into the current directory as step001.pgm, step002.pgm etc.
+  *
+  * \author von Deylen
+  */

@@ -1,0 +1,124 @@
+makefile.selection
+
+EXTERNALS = cholmod fox hypre triangle vtk vtkfox xml2
+MODULES  = aol bem dtgrid eikonal multigrid narrowband qcsm quoc surf tpcfe
+
+PROJECTS  = \
+	selfTest/aol \
+	selfTest/bem \
+	selfTest/dtgrid \
+	selfTest/eikonal \
+	selfTest/multigrid \
+	selfTest/narrowband \
+	selfTest/qcsm \
+	selfTest/quoc \
+	selfTest/surf \
+	selfTest/tpcfe 
+
+PROJECTS += \
+	tools/benchmark
+
+================================================================================
+
+Computer name          : osiris
+CPU model              : Intel(R) Core(TM) i3 CPU       M 370  @ 2.40GHz
+Clock speed in MHz     : 1 x 2399.000,  3 x 933.000
+Number of cores        : 4
+Max. number of threads : unlimited
+Main memory in kB      : 1914452
+Quocmesh revision      : 31135
+Compilation flags      : g++-4.3 -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/dtgrid -I./modules/eikonal -I./modules/multigrid -I./modules/narrowband -I./modules/qcsm -I./modules/quoc -I./modules/surf 
+ -I./modules/tpcfe -I./external/cholmod -I./external/fox -I./external/hypre -I./external/triangle -I./external/vtk -I./external/vtkfox 
+ -I./external/xml2 -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra 
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2 
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW 
+ -I/usr/include/suitesparse -I/usr/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/hypre-64/include -I./external/triangle/include -I/usr/include/vtk-5.4 -I/usr/include/vtk-5.4/Rendering 
+ -I/usr/include/vtk-5.4/Common -I/usr/include/vtk-5.4/Filtering -I/usr/include/vtk-5.4/Graphics -I/usr/include/vtk-5.4/IO -I/usr/include/vtk-5.4/VolumeRendering -I./external/vtkfox/src -I/usr/include/libxml2 
+ -DUSE_LIB_XML2 -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX 
+ -DUSE_EXTERNAL_XML2
+
+
+ Current linker settings
+
+ld foo.o -o foo bar... -lm -lbz2 
+ -lpng -lz -lfftw3 -lfftw3f -lcholmod -lamd -lcolamd 
+ -lcamd -lccolamd -lbtf -lcxsparse -lklu -lmetis -llapack 
+ -lblas -lgfortran -L/usr/lib -L/usr -L/usr -L/usr/lib -lFOX-1.6 
+ -L/home/prog/hypre-64/lib -lHYPRE ./external/triangle/lib/libTriangleMeshGenerator.a -L/usr/lib -lvtkRendering -lvtkGraphics -lvtkImaging 
+ -lvtkIO -lvtkFiltering -lvtkCommon -lvtksys -lvtkDICOMParser -lvtkftgl -lvtkVolumeRendering 
+ -lvtkRendering -lvtkHybrid -lvtkmetaio -lvtkverdict -lvtkNetCDF -lvtksqlite -lvtkexoIIc 
+ -lvtkViews -lvtkInfovis -lvtkWidgets -L./external/vtkfox/src -lvtkfox -lxml2
+
+================================================================================
+
+Compiler version       : g++-4.3 (Ubuntu 4.3.5-3ubuntu1) 4.3.5
+
+make projects
+781.740u 21.590s 13:34.78 98.5%	0+0k 34528+422168io 84pf+0w
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      508 |      506
+selfTest/tpcfe/tpcfeBenchmark                             |      187 |      187
+tools/benchmark/benchmarkHeat3d                           |      289 |      288
+tools/benchmark/sparsebench                               |      200 |      200
+
+================================================================================
+
+Compiler version       : g++-4.4 (Ubuntu/Linaro 4.4.4-14ubuntu5) 4.4.5
+
+make projects
+799.680u 20.300s 13:55.92 98.0%	0+0k 78600+402984io 129pf+0w
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      540 |      538
+selfTest/tpcfe/tpcfeBenchmark                             |      185 |      185
+tools/benchmark/benchmarkHeat3d                           |      250 |      249
+tools/benchmark/sparsebench                               |      181 |      181
+
+
+================================================================================
+
+Compiler version       : g++-4.5 (Ubuntu/Linaro 4.5.1-7ubuntu2) 4.5.1
+
+make projects
+668.760u 18.640s 11:36.54 98.6%	0+0k 24136+365056io 105pf+0w
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      543 |      542
+selfTest/tpcfe/tpcfeBenchmark                             |      191 |      190
+tools/benchmark/benchmarkHeat3d                           |      242 |      242
+tools/benchmark/sparsebench                               |      184 |      183
+
+================================================================================
+
+Compiler version       : g++ (GCC) 4.5.1
+
+make projects
+674.930u 19.020s 11:54.98 97.0%	0+0k 126608+365280io 161pf+0w
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      516 |      515
+selfTest/tpcfe/tpcfeBenchmark                             |      186 |      186
+tools/benchmark/benchmarkHeat3d                           |      350 |      349
+tools/benchmark/sparsebench                               |      219 |      218
+
+
+================================================================================
+
+Compiler version       : g++ (GCC) 4.6.0
+
+make projects
+650.040u 17.390s 11:18.07 98.4%	0+0k 39368+344040io 156pf+0w
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      537 |      535
+selfTest/tpcfe/tpcfeBenchmark                             |      184 |      183
+tools/benchmark/benchmarkHeat3d                           |      232 |      231
+tools/benchmark/sparsebench                               |      201 |      201
+

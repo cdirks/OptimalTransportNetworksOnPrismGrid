@@ -1,0 +1,41 @@
+# Silence all GCC warnings triggered by DUMA.
+IF ( CMAKE_COMPILER_IS_GNUCXX )
+  ADD_DEFINITIONS ( -w )
+#  REMOVE_DEFINITIONS ( -pedantic )
+ENDIF ( CMAKE_COMPILER_IS_GNUCXX )
+
+ADD_EXECUTABLE ( createconf createconf.c )
+
+INCLUDE_DIRECTORIES ( ${CMAKE_CURRENT_SOURCE_DIR} )
+INCLUDE_DIRECTORIES ( ${CMAKE_CURRENT_BINARY_DIR} )
+
+SET ( HDRS
+  )
+
+SET ( SRCS
+  duma.c 
+  dumapp.cpp 
+  print.c 
+  sem_inc.c
+)
+
+SET ( EXTERNAL_DUMA_INCLUDE_DIR
+  ${CMAKE_CURRENT_SOURCE_DIR}
+  CACHE INTERNAL ""
+)
+
+ADD_LIBRARY ( duma STATIC ${SRCS} ${HDRS} )
+
+ADD_CUSTOM_COMMAND( TARGET createconf POST_BUILD COMMAND ${CMAKE_CURRENT_BINARY_DIR}/createconf ) 
+ADD_DEPENDENCIES ( duma createconf ) 
+
+SET ( EXTERNAL_DUMA_LIBRARIES duma CACHE INTERNAL "" )
+
+ADD_EXECUTABLE ( dumatestpp dumatestpp.cpp  )
+TARGET_LINK_LIBRARIES( dumatestpp ${EXTERNAL_DUMA_LIBRARIES} ) 
+
+ADD_EXECUTABLE ( example1 example1.cpp  )
+TARGET_LINK_LIBRARIES( example1 ${EXTERNAL_DUMA_LIBRARIES} ) 
+
+ADD_EXECUTABLE ( testsems testsems.cpp  )
+TARGET_LINK_LIBRARIES( testsems ${EXTERNAL_DUMA_LIBRARIES} -lpthread ) 

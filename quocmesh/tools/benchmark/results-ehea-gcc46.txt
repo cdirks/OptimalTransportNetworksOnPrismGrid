@@ -1,0 +1,238 @@
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736040
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Fri Apr 29 16:31:37 CEST 2011
+Quocmesh revision      : 31062
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt 
+ -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox -I./external/xml2 -O3 -fmessage-length=0 
+ -DGNU -Wcast-qual -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -Wno-conversion 
+ -fPIC -Wdisabled-optimization -funroll-loops -msse2 -DUSE_SSE -march=native -ansi 
+ -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/fox-toolkit-64/include/fox-1.6 
+ -DHAVE_GL_H=1 -I/home/prog/grape-64 -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk 
+ -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src 
+ -I/usr/include/libxml2 -DUSE_LIB_XML2 -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE 
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      346 |      345
+tools/benchmark/benchmarkHeat3d                           |      443 |      442
+tools/benchmark/sparsebench                               |      278 |      277
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736040
+Compiler version       : g++ (GCC) 4.6.0
+Date and time          : Fri Apr 29 14:24:52 CEST 2011
+Quocmesh revision      : 31062
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt 
+ -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox -I./external/xml2 -O3 -fmessage-length=0 
+ -DGNU -Wcast-qual -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -Wno-conversion 
+ -fPIC -Wdisabled-optimization -funroll-loops -msse2 -DUSE_SSE -march=native -ansi 
+ -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/fox-toolkit-64/include/fox-1.6 
+ -DHAVE_GL_H=1 -I/home/prog/grape-64 -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk 
+ -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src 
+ -I/usr/include/libxml2 -DUSE_LIB_XML2 -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE 
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      322 |      322
+tools/benchmark/benchmarkHeat3d                           |      286 |      285
+tools/benchmark/sparsebench                               |      233 |      232
+
+
+
+
+-Ofast
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736040
+Compiler version       : g++ (GCC) 4.6.0
+Date and time          : Fri Apr 29 13:01:26 CEST 2011
+Quocmesh revision      : 31062
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt 
+ -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox -I./external/xml2 -Ofast -fmessage-length=0 
+ -DGNU -Wcast-qual -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -Wno-conversion 
+ -fPIC -Wdisabled-optimization -funroll-loops -msse2 -DUSE_SSE -march=native -ansi 
+ -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/fox-toolkit-64/include/fox-1.6 
+ -DHAVE_GL_H=1 -I/home/prog/grape-64 -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk 
+ -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src 
+ -I/usr/include/libxml2 -DUSE_LIB_XML2 -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE 
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      402 |      401
+tools/benchmark/benchmarkHeat3d                           |      290 |      289
+tools/benchmark/sparsebench                               |      237 |      237
+
+
+
+-flto
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736040
+Compiler version       : g++ (GCC) 4.6.0
+Date and time          : Fri Apr 29 15:20:19 CEST 2011
+Quocmesh revision      : 31062
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt 
+ -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox -I./external/xml2 -O3 -flto 
+ -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra -Wold-style-cast -Woverloaded-virtual 
+ -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2 -DUSE_SSE -march=native 
+ -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include 
+ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64 -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include 
+ -I/home/prog/vtk-64/include/vtk -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering 
+ -I./external/vtkfox/src -I/usr/include/libxml2 -DUSE_LIB_XML2 -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE 
+ -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      323 |      322
+tools/benchmark/benchmarkHeat3d                           |      290 |      289
+tools/benchmark/sparsebench                               |      233 |      232
+
+
+
+-floop-interchange -floop-strip-mine -floop-block
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736040
+Compiler version       : g++ (GCC) 4.6.0
+Date and time          : Fri Apr 29 15:57:38 CEST 2011
+Quocmesh revision      : 31062
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt 
+ -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox -I./external/xml2 -O3 -floop-interchange 
+ -floop-strip-mine -floop-block -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra 
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2 
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW 
+ -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64 -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin 
+ -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics 
+ -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src -I/usr/include/libxml2 -DUSE_LIB_XML2 -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD 
+ -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK 
+ -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      324 |      323
+tools/benchmark/benchmarkHeat3d                           |      284 |      284
+tools/benchmark/sparsebench                               |      232 |      231
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736396
+Compiler version       : g++ (GCC) 4.6.1
+Date and time          : Mon Aug 22 14:53:42 CEST 2011
+Quocmesh revision      : 33175
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/multigrid -I./modules/quoc -I./modules/tpcfe -I./external/ahmed -I./external/cholmod -I./external/cimg -I./external/fox 
+ -I./external/grape -I./external/hypre -I./external/ipopt -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox 
+ -I./external/xml2 -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra 
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -Wnon-virtual-dtor -fPIC -Wdisabled-optimization -funroll-loops 
+ -msse2 -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 
+ -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/cimg -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64 
+ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common 
+ -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src -I/usr/include/libxml2 -DUSE_LIB_XML2 
+ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_CIMG -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT 
+ -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      332 |      331
+selfTest/tpcfe/tpcfeBenchmark                             |      215 |      215
+tools/benchmark/benchmarkHeat3d                           |      293 |      292
+tools/benchmark/sparsebench                               |      242 |      242
+
+
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 7 x 1596.000,  1 x 2395.000
+Number of cores        : 8
+Max. number of threads : 2
+Main memory in kB      : 24736396
+Compiler version       : g++ (GCC) 4.6.1
+Date and time          : Mon Aug 22 15:42:54 CEST 2011
+Quocmesh revision      : 33175
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem 
+ -I./modules/multigrid -I./modules/quoc -I./modules/tpcfe -I./external/ahmed -I./external/cholmod -I./external/cimg -I./external/fox 
+ -I./external/grape -I./external/hypre -I./external/ipopt -I./external/openmesh -I./external/triangle -I./external/vtk -I./external/vtkfox 
+ -I./external/xml2 -Ofast -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra 
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -Wnon-virtual-dtor -fPIC -Wdisabled-optimization -funroll-loops 
+ -msse2 -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 
+ -DUSE_LIB_FFTW -I/home/prog/ahmed-64/include -I/home/prog/suitesparse-64/include -I/home/prog/cimg -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64 
+ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/OpenMesh-64/ -I./external/triangle/include -I/home/prog/vtk-64/include/vtk -I/home/prog/vtk-64/include/vtk/Rendering -I/home/prog/vtk-64/include/vtk/Common 
+ -I/home/prog/vtk-64/include/vtk/Filtering -I/home/prog/vtk-64/include/vtk/Graphics -I/home/prog/vtk-64/include/vtk/IO -I/home/prog/vtk-64/include/vtk/VolumeRendering -I./external/vtkfox/src -I/usr/include/libxml2 -DUSE_LIB_XML2 
+ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_CIMG -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT 
+ -DUSE_EXTERNAL_OPENMESH -DUSE_EXTERNAL_TRIANGLE -DUSE_EXTERNAL_VTK -DUSE_EXTERNAL_VTKFOX -DUSE_EXTERNAL_XML2
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      406 |      405
+selfTest/tpcfe/tpcfeBenchmark                             |      182 |      181
+tools/benchmark/benchmarkHeat3d                           |      295 |      295
+tools/benchmark/sparsebench                               |      243 |      243
+

@@ -1,0 +1,20 @@
+depth                           8
+scaleto                         0.05
+
+geometry_filename               out/l8_20p3/20p3_minus_15_percent.dat.bz2
+undeformed_ply_filename         out/l8_20p3/20p3_minus_15_percent_und.ply
+
+deformations_fnmask             out/l8_20p3/20p3_minus_15_percent_def%d.dat.bz2
+deformed_ply_filename           out/l8_20p3/20p3_minus_15_percent_def.ply
+
+clipXmin                        0
+clipXmax                        256
+clipYmin                        0
+clipYmax                        256
+clipZmin                        0
+clipZmax                        256
+
+Emodulus                        1.0e7
+nu                              0.33
+aleph                           1.0
+

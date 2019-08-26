@@ -1,0 +1,6 @@
+# Copy the input files necessary for the self test.
+FILE ( COPY ${CMAKE_CURRENT_SOURCE_DIR}/referenceTriangulation.ply
+            ${CMAKE_CURRENT_SOURCE_DIR}/referenceGraph.ply.bz2 
+       DESTINATION ${CMAKE_CURRENT_BINARY_DIR} )
+
+QUOC_ADD_TEST_FROM_CPP_BASENAME ( selfTest )

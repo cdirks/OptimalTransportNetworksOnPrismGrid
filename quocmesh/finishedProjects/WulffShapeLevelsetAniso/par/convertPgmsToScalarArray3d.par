@@ -1,0 +1,38 @@
+# notice: the pictures itself have to be called as an extra
+# argument, e.g. call
+# convertPgmsToScalarArray3d parameterfile *.pgm
+
+# the size of the ScalarArray:
+DestSizeX 129
+DestSizeY 129
+DestSizeZ 129
+
+# the size of the cutout of the data (z = #pics)
+SourceSizeX 129
+SourceSizeY 129
+
+# a possible offset of the cutout
+SourceOffsetX 196
+SourceOffsetY 0
+SourceOffsetZ 25
+
+# a possible offset in the ScalarArray
+DestOffsetX 0
+DestOffsetY 0
+DestOffsetZ 0
+
+
+# do a thresholding? (yes = 1, no = 0)
+doThreshold 1
+# if yes then set the threshold itself
+threshold 100
+
+# saveOnly01 means no grey values, but only 0 or 1 is stored
+saveOnly01 0
+
+# add an offset to the scalarArray (e.g. to get a 0-isosurface)
+offset 0
+
+
+# save the ScalarArray as
+saveName Dicom/DicomBlock129Thr100.bz2

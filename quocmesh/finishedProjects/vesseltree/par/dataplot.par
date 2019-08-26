@@ -1,0 +1,24 @@
+atree_file		trees/a_28_1024_s.tree
+vtree_file		trees/v_28_1024_s.tree
+
+xang_deg		30.0
+yang_deg		0.0
+zang_deg		0.0
+zzoom			0.15
+color_scale		1.0
+
+topview			1
+
+leveltissue		7
+levelvessels		9
+
+# color scaling, inverse fraction of half spectrum used.
+scalefactor 		160.0
+
+# average value for the tissue plots
+avg_val			0.00625
+
+ves_avg_val		0.5
+ves_scalefactor		2.0
+
+min_plot_speed		5e-4

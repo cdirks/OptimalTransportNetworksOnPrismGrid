@@ -1,0 +1,6 @@
+//! @dir
+//!
+//! @brief Implementation of " Marker-less reconstruction of dense 4-d surface motion fields using active laser triangulation from sparse measurements for respiratory motion management" - http://dx.doi.org/10.1007/978-3-642-33415-3_51
+//!        and " Joint surface reconstruction and 4D deformation estimation from sparse data and prior knowledge for marker-less respiratory motion tracking" - http://dx.doi.org/10.1118/1.4816675
+//!
+//! @author Bauer

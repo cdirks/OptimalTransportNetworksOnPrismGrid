@@ -1,0 +1,15 @@
+types               { 102 103 }
+
+dc_minus_start        1000.0
+dc_minus_stepfactor   10.0
+dc_minus_steps        5
+
+start_depth           4
+stop_depth            9
+
+explicitLevel         3
+numSmooth             3
+
+# pcg solver parameters
+solver_eps           1e-16
+solver_steps         10000

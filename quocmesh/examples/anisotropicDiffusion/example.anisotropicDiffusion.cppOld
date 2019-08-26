@@ -1,0 +1,109 @@
+#include <travOp.h>
+#include <moment3d.h>
+#include <scalarArray3d.h>
+#include <vec.h>
+#include <solver.h>
+
+#define REAL float 
+
+int main(){
+  
+  int k=6;    // grid depth
+  int dim=(int)pow(2.,k)+1;
+  int allNodes=dim*dim*dim;
+
+  REAL TAU=0.001;
+  REAL LAMBDA=1.;
+  REAL ALPHA=.1;
+  REAL lambda2=LAMBDA*LAMBDA;
+
+  qcLTIndexMapper mapper(k);
+  qcGrid< qcEstimator3d<REAL> > grid(k, QC_3D, &mapper);
+  double h = grid.h_x[grid.getGridDepth()];
+  
+  typedef qcScalarArray3d<REAL>* ARRAY;
+  ARRAY vects[9];
+  for(int i=0;i<9;i++){
+    vects[i]= new qcScalarArray3d<REAL>(dim,dim,dim);
+    vects[i]->clear();
+  }
+  ARRAY coeffs[3];
+  for(int i=0;i<3;i++){
+    coeffs[i]= new qcScalarArray3d<REAL>(dim,dim,dim);
+    coeffs[i]->clear();
+  }
+
+    qcScalarArray3d<REAL> image(dim,dim,dim);
+  
+    qcScalarArray2d<REAL> image2(dim,dim);
+    try{
+	image2.load("wurst65.pgm");
+    } catch(qcException ex){ex.dump();};
+
+    float val=255;
+    int flag=0;
+    for(int i=0;i<dim;i++){
+	for(int j=0;j<dim;j++){
+	    for(int l=0;l<dim;l++){
+	      
+		val=image2.get(l,j);
+		/*if(l==j) val=255.;
+		  else val=0.;*/
+	      image.set(l,j,i,val);
+	    }
+	}
+    }
+
+    qcScalarArray2d<REAL> image2d(dim, dim);
+    
+    qcMoment3d<REAL> qcmoment3d(&grid,&image,vects,NULL,coeffs,4);
+    
+    qcmoment3d.apply(*(vects[0]),*(vects[0]));
+
+/*    coeffs[0]->saveSlices("Slices/coeffs0-%03d.pgm", QC_Z);
+    coeffs[1]->saveSlices("Slices/coeffs1-%03d.pgm", QC_Z);
+    coeffs[2]->saveSlices("Slices/coeffs2-%03d.pgm", QC_Z);
+*/
+   cerr<<"computing gi...";
+     const REAL g1=ALPHA;
+     REAL g2;
+     REAL g3;
+     for(int i=0;i<dim;i++){
+       for(int j=0;j<dim;j++){
+	 for(int k=0;k<dim;k++){
+	   const REAL w = coeffs[0]->get(i,j,k);
+	   const REAL v = 1-coeffs[2]->get(i,j,k);
+	   coeffs[0]->set(i,j,k,g1);
+	   coeffs[1]->set(i,j, k, g1/(1+w*w/lambda2));
+	   coeffs[2]->set(i,j,k, g1/(1+v*v/lambda2));
+	 }
+       }
+     }
+     cerr<<"done"<<endl;
+
+    qcAnisotropicDiffusion3DOTF<REAL> qcMplusTauMalL(&grid, vects, coeffs,TAU); 
+
+    qcScalarArray3d<REAL>   solution(dim,dim,dim);
+    qcScalarArray3d<REAL>   rightHandSide(dim,dim,dim);
+
+    qcMassMatrix3DOTF<REAL> mm(&grid);
+
+    mm.apply(image, rightHandSide);
+    
+    cerr<<"Creating solver...";
+    qcSolver<REAL> solver(allNodes);
+    cerr<<"...done."<<endl;
+    cerr<<"Solving..."; 
+    try{
+      solver.cg(qcMplusTauMalL,solution,rightHandSide);
+    }
+    catch(qcException e){
+      cerr<<"ERROR:"<<endl;
+      e.dump();
+      exit(999);
+    }
+    cerr<<"done\nwriting slices to File...";
+    solution.saveSlices("Slices/solution-%03d.pgm", QC_Z);
+    cerr<<"done"<<endl;
+    return 0;
+};

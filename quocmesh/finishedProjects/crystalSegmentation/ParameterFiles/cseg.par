@@ -1,0 +1,121 @@
+#reference  ../../../input/2D/MSnoise.pgm
+#reference  ../../../input/2D/cvtest65.pgm
+#reference  ../../../input/2D/fourSquares129.pgm
+#reference  ../../../input/2D/rectangle.pgm
+#reference  ../../../input/2D/Rechteckeglatt2_small.pgm
+#reference  ../../../input/2D/Rechteckeglatt2.pgm
+#reference  ../../../input/2D/Rechteckelessnoise2.pgm
+#reference  ../../../input/2D/slope65.pgm
+#reference  ../../../input/2D/psi0_simple.pgm
+#reference  ../../../input/2D/psi0_sinus.pgm
+#reference  ../../../input/2D/grain_len_63-257.pgm
+#reference  ../../../input/2D/grain_len_63-513.pgm
+#reference  ../../../input/2D/grain_len_06_bw.pgm
+#reference  ../../../input/2D/grain_rough_45_bw.pgm 
+#reference  ../../../input/2D/psi_1400.pgm
+#reference  ../../../input/2D/psi_s_1400_cut.pgm
+#reference  ../../../input/2D/psi0_grain_bound129.pgm
+#reference  ../../../input/2D/psi0_grain_sin129.pgm
+#reference  ../../../input/2D/psi0_grain_sin2129.pgm
+#reference  ../../../input/2D/psi0_phase_grain_bound129.pgm
+#reference  ../../../input/2D/psi0_grain_liquid_sin129.pgm
+#reference  ../../../input/2D/psi0_grain_liquid_sin129_rotated.pgm
+#reference  ../../../input/2D/psi_s_2200_cut.pgm
+#reference  ../../../input/2D/al.pgm
+#reference  ../../../input/2D/allarge.pgm
+#atomDistance 0.027237
+# approx 7/257
+#reference  ../../../input/2D/allarge_single_grain_cut.pgm
+#atomDistance 0.046512
+# approx 6/129
+#reference  ../../../input/2D/mo.pgm
+#reference  ../../../input/2D/tem129.pgm
+#reference  ../../../input/2D/hrem.pgm
+#atomDistance 0.021442
+# approx 11/513
+#reference  ../../../input/2D/hrem_single_grain_cut.pgm
+#reference  ../../../input/2D/hrem_single_grain_small_cut.pgm
+#atomDistance 0.077821
+# approx 20/257
+#reference  ../../../input/2D/orius.pgm
+#reference  ../../../input/2D/psi_grain_liquid_smooth2.pgm
+#reference  ../../../input/2D/psi_grain_liquid_smooth2129.pgm
+#reference  ../../../input/2D/psi0_single_grain.pgm
+reference  ../../../input/2D/psi0_single_grain129.pgm
+atomDistance 0.072552
+# approx 4*M_PI/(sqrt(3)*100)
+#reference  ../../../input/2D/PFCdisloc129.pgm
+#reference  ../../../input/2D/PFCdisloc257.pgm
+#atomDistance 0.0658915
+# approx 8.5/129
+#reference  ../../../input/2D/DislocArti257.pgm
+#atomDistance 0.11867704
+# approx 30.5/257
+#reference  ../../../input/2D/psi0_single_grain129_deformed.pgm
+#reference  ../../../input/2D/Ni4Ti3-in-NiTi-cut.pgm
+#atomDistance 0.027237
+# approx 7/257
+#reference  ../../../input/2D/Ni4Ti3-in-NiTi_small_cut.pgm
+#atomDistance 0.054264
+# approx 7/129
+#reference  ../../../input/2D/Ni4Ti3-in-NiTi_big_cut.pgm
+#atomDistance 0.006829
+# approx 7/1025
+#reference  ../../../input/2D/Ni4Ti3-in-NiTi_big_small_cut.pgm
+#atomDistance 0.013645
+# approx 7/513
+#reference  ../../../input/2D/psi1000.pgm
+#atomDistance 0.0661478
+# approx 17/257
+#reference  ../../../input/2D/psi1000bw2.pgm
+#reference  ../../../input/2D/psi0bw3.pgm 
+#atomDistance 0.0788608
+# approx 4*M_PI/(sqrt(3.)*92)
+#reference  ../../../input/2D/psi_s_2000.pgm
+#reference  ../../../input/2D/psi_s_2200.pgm
+#atomDistance 0.03891050
+# approx 10/257
+#reference  ../../../input/2D/psi_multi_test.pgm
+#atomDistance 0.070038911
+# approx 18/257
+#reference  ../../../input/2D/psi_grains_part_bw.pgm 
+#reference  ../../../input/2D/psi_grains_part_bw513.pgm 
+#atomDistance 0.0428015564
+# approx 11/257
+#reference  ../../../input/2D/psi_grains_bw_crop.pgm
+#reference  ../../../input/2D/psi_grains_bw_crop513.pgm
+#reference  ../../../input/2D/psi_grains_bw_crop129.pgm
+#atomDistance 0.02048780488
+# approx 21/1025
+
+#phi {phi_01_0000.bz2  phi_00_0000.bz2}
+
+saveDirectory results
+
+saveOffset      1
+numSaveFirst    5
+
+# gamma weights the perimiter length term
+gamma           2
+# delta weights the phase fitting term
+delta           1.
+# lambda weights the deformation regularization term
+lambda          0.1
+# Thresholds for "generator.generateArtificialPFCFront"
+#thresholdLower  0.65
+#thresholdUpper  0.90
+#thresholdGradient 26
+thresholdLower  0.3
+thresholdUpper  0.5
+thresholdGradient 20
+# Thresholds for "generator.generateArtificialPFCFront"
+#thresholdLower  0.45
+#thresholdUpper  0.85
+#thresholdGradient 36
+
+numSteps        1000
+
+epsilon         0.05
+# epsilon is the regularization parameter of the Heavyside function
+epsilonMCM      .1
+# epsilonMCM is the regularization parameter of the MCMStiffOp used in the variation of the length term.

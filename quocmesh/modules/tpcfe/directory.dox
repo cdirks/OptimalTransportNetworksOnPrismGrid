@@ -1,0 +1,76 @@
+/** \namespace tpcfe
+ *  \brief Composite Finite Elements.
+ *  See Module Documentation \ref tpcfedoc.
+ */
+
+//! @dir
+//! @brief Composite Finite Elements.
+//! See Module Documentation @ref tpcfedoc.
+
+/** \page tpcfedoc Composite Finite Element implementation (tpCFE)
+ *
+ *  \author Tobias Preusser (Preusser)
+ *  \section tpcfe_sec_intro Introduction
+
+ *
+ * <h1> This documentation is still under construction </h1>
+ *
+ The tpcfe package is a new implementation of composite finite elements. This documentation
+ describes how the package works, how classes interact, and how to proceed if you want to write
+ your own operator based on cfe's.
+
+ *  \section tpcfe_sec_howWorks How an operator based on cfe discretization works
+ *  \subsection tpcfe_sec_sampleProgram A sample program
+
+Let us base the explanation on a small sample program which instantiates a standard mass matrix
+operator on a cfe grid which may contain interfaces. Since a lot of template mechnism is used in
+cfe, the expressions for variable declaration may become long and unclear. The use of multiple
+typedefs to make life simpler
+\code
+  typedef tpcfe::CFEConfigurator < double, qc::QC_3D > ConfigType;
+  typedef tpcfe::CFEMassOp  < ConfigType > MassOpType;
+\endcode
+
+These typedefs should be made \e globally, i.e. before the start of the main-block
+\code
+int main(int argc, char **argv) {
+   try {
+
+      tpcfe::CFEGrid < double >        grid(3, qc::QC_3D);
+      tpcfe::CFEMassOp  < ConfigType > massOp(grid, aol::ASSEMBLED);
+      aol::Vector < double >           source(aol::Cub((1<<3)+1)), dest(aol::Cub((1<<3)+1));
+
+      massOp.applyAdd(source, dest);
+
+   } catch(aol::Exception &e) {
+      e.dump();
+   }
+   return EXIT_SUCCESS;
+}
+\endcode
+In line 1 we create a 3D grid of depth 3, i.e. a grid which has \f$ 2^3+1 \f$ degrees of freedom
+in each dimension. The grid is given to the operator massOp in line 2. Moreover we want the operator
+to assemble matrices, thus, we set aol::ASSEMBLED. Just for reasons of completeness of the code
+we create two vectors of the appropriate size, which can be put into
+tpcfe::CFEOpInterface< ConfiguratorType, Imp >::applyAdd (here as massOp.apply) in line 4.
+
+ *  \subsection tpcfe_sec_apply Understanding the apply
+
+ To demonstrate how you can write your own cfe operator it is necessary to explain how the
+ mechanism of applying the operator (assembling a matrix and multiplying with it) works.
+
+ If the matrix object does not exist (either it has not been created yet or it has been
+ invalidated) tpcfe::CFEOpInterface< ConfiguratorType, Imp >::assembleMatrix() respectively
+ tpcfe::CFEOpInterface< ConfiguratorType, Imp >::assembleAddMatrix(MatrixType &mat) is being called.
+
+
+
+ *  \section tpcfe_sec_writingOwn Writing your own cfe operator
+
+ Blabla
+
+ *  \section tpcfe_sec_testing Built-in testing
+
+ Blabla
+
+ */

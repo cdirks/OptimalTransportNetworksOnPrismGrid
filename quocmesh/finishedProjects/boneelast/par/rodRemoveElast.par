@@ -1,0 +1,27 @@
+E                     100.0
+nu                    0.33
+
+level                 6
+coarse_level          2
+
+num_rods              1
+
+# thickness relative to "wavelength" = 1 / num_rods
+d_x                   { 2.4 }
+d_y                   { 2.4 }
+d_z                   { 2.4 }
+
+# removal percentages (in 1)
+p_x                   { 0.0 }
+p_y                   { 0.0 }
+p_z                   { 0.0 }
+
+fix_dirs              { 2 }
+shift_dirs            { 2 }
+
+rand_steps            1
+rand_name_offset      0
+random_seed           0
+
+levelset_fnmask       out/test_Diam_%1.3f_%1.3f_%1.3f_Rmv_%1.3f_%1.3f_%1.3f_Rnd_%d_fix_%d_shift_%d.dat.bz2
+deformations_fnmask   out/test_Diam_%1.3f_%1.3f_%1.3f_Rmv_%1.3f_%1.3f_%1.3f_Rnd_%d_fix_%d_shift_%d_Def%%d.dat.bz2

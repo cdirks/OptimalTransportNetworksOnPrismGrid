@@ -1,0 +1,5 @@
+//! @dir
+//!
+//! @brief Examples that demonstrate loading and saving images, resampling and convolution with a Gaussian.
+//!
+//! @author Nemitz, Lenz, Schwen

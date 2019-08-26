@@ -1,0 +1,19 @@
+# mandatory parameters
+TOL_Newton             1E-10
+maxIterNewton          50
+maxIterSolver          5
+
+# optional arguments
+TOL_SOLVER             1E-30
+stoppingMode           STOPPING_ABSOLUTE
+timestepController     ARMIJO
+outStream              cerr
+logMode                table
+writeUpdate            true
+tauMin                 0.01
+tauMax                 2.
+numAveragingSteps      1
+quietMode              false
+solverQuietMode         true
+wantToComputeSolverTOL true
+solverTOLSafetyFactor  0.001

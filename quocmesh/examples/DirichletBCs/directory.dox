@@ -1,0 +1,11 @@
+//! @dir
+//!
+//! @brief Implementation of Dirichlet and periodic boundary conditions
+//!
+//! This example contains different methods how Dirichlet boundary conditions
+//! can be imposed (full assembling and modification of matrix, masked assembling).
+//! Moreover, an example for periodic boundary conditions using the PeriodicityHandler
+//! is given.
+//!
+//! @author Nemitz, Schwen
+

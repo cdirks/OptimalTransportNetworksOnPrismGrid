@@ -1,0 +1,13 @@
+# time-dependend stuff
+
+tau         1
+timesteps   11
+timeOffset  1
+numberSaveFirstPics 5
+
+# file stuff
+
+loadName ../testdata/Helix6.bz2
+saveName Helix6AnisoDiff
+
+                               

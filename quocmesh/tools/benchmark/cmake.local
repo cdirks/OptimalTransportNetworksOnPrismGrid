@@ -1,0 +1,3 @@
+QUOC_ADD_BENCH ( benchmarkHeat3d )
+QUOC_ADD_BENCH ( regisbench )
+QUOC_ADD_BENCH ( sparsebench )

@@ -1,0 +1,12 @@
+//! @dir
+//!
+//! @brief Tool for shape optimization wrt. a weighted sum of volume, surface area, and nonlinear compliance.
+//!
+//! "shapeOptimization.cpp" has to be called together with a parameter file to
+//! compute an optimal shape for a given mechanical load.
+//! The approach is based on an Allen-Cahn description of shapes and
+//! is described in the following article:
+//! [1] P. Penzler, M. Rumpf, and B. Wirth. A phase-field model for compliance shape optimization in nonlinear elasticity.
+//!     submitted to ESAIM: COCV, 2010.
+//!
+//! @author Wirth

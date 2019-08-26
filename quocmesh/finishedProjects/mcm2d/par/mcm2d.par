@@ -1,0 +1,30 @@
+# time-dependend stuff
+tau         2.0
+epsilon     5.0
+
+# number timesteps and save every "timeOffset"th image
+timesteps   5001
+timeOffset  5
+
+# data stuff
+
+image ~/input/2D/VortragSchule/Kurve.bz2
+saveName pics/vortragSchule/MCMKurve
+
+#image pics/L1Norm/L1SD.pgm
+#saveName pics/L1Norm/L1Norm2Circle
+
+#image pics/Rekonstruktion/squareStartImgBigEdgesNoisyBG.pgm
+#saveName pics/RekonstrResults/MCMTest
+
+#image pics/MaxNorm.bz2
+#saveName pics/MaxNorm
+
+#image pics/Rekonstruktion/lenaReconstr.pgm
+#saveName pics/RekonstrResults/lenaTau05Eps50BG128
+
+#image pics/Rekonstruktion/boatsReconstr.pgm
+#saveName pics/RekonstrResults/boatsErode_Tau10_Eps50_BG128
+
+#image pics/MaxNorm8.bz2
+#saveName pics/MaxNorm8MCM

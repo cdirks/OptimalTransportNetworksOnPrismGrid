@@ -1,0 +1,48 @@
+# shape to be transported via parallel transport
+variationShape <filename>.ply
+
+# parallel transport along path which is supposed to be <destDirectory>/<path>00.ply, <destDirectory>/<path>01.ply, ..., <destDirectory>/<path>0K.ply,
+# where K is the number of shells
+path finger
+numOfShells 5
+
+# if no path is available use linear interpolation between two given shapes
+startShape <filename>.ply
+endShape <filename>.ply
+
+# usually it is reasonable to first scale the shape to be transported,
+# then transport the scaled variation and rescale at the end.
+scaledParallelTransport 0.01
+
+# diagonals in geodesic parallelogram construction are N-point geodesics, 
+# where N = 2^L + 1 and L is number of cascadic level in par. transport
+cascadicLevelsInParTranp 2
+
+# weights
+bendWeight 0.0001
+tangWeight 1.0
+lengthweight 1.0
+volweight 1.0
+
+#SolverType{ 0 = Cholesky, 1 = BiCholesky, 2 = LU, 3 = CG }
+solverTypeInterpolation  2
+solverTypeExtrapolation  2
+
+numOfDescentSteps 10000
+
+# true, if boundary should be fixed
+fixBoundary 0
+#bdryMask <maskname>.txt
+
+# should use Lagrange setup to incorporate rigid body motions properly
+LagrangeSetup 1
+# otherwise, the Hessian has to be regularized
+regularizeMatrix 0
+
+# directory where results are supposed to be stored
+destDirectory <path>
+savenameStem <stem>
+
+# saving options
+saveOnlyFinalResult 1
+saveIntermediateMesh 1

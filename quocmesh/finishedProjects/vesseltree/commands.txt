@@ -1,0 +1,12 @@
+# bonn: separate convert steps for cropping and scaling - why?
+convert -crop 128x128+1+1 -geometry 400% data.ppm tissue.ppm
+convert -crop 1024x1024 -geometry 50% data.eps vessels.ppm
+# same for alpha.eps, then use gimp to map grey values to [0,153]
+pnmomp -alpha alpha.pgm tissue.ppm vessels.ppm mix.ppm
+
+pnmpaste mix.ppm x y big.ppm > big2.ppm
+# etc.
+# finally convert to png
+
+# combine png images to mpeg4 avi
+mencoder "mf://*.png" -mf fps=10 -o output.avi -ovc lavc -lavcopts vcodec=mpeg4

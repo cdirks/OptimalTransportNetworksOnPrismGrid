@@ -1,0 +1,41 @@
+# time-dependend stuff
+
+tau         0.5
+timesteps   251
+
+# save every "timeOffset" timestep
+timeOffset 10
+
+
+# radius of the ball for the local average curvature in elements
+epsilon 5
+
+
+# file stuff
+
+image Data/MRAVolume/MRACutOutThr70_SmallCutOut7.bz2
+saveName Data/MRAVolume/MRACutOutThr70_SmallCutOut7GlobVP
+
+#image Data/Dicom257/TolgaCutOutThr100SD.bz2
+#saveName Data/Dicom257/IsoLocVPMCM_TolgaCutOut_Thr100_Tau1
+
+#image Data/SimpleArk/SmoothedSimpleArkOrig5.bz2
+#saveName Data/SimpleArk/mcmLocalBIGTIMESTEPEps3VolPresSimpleArk
+
+#image Data/Block/SmoothBlockOrig6.bz2
+#saveName Data/Block/VolTestBlockMCM6
+
+#image Data/Diagonale/NoisyDiagOrig5.bz2
+#saveName Data/Diagonale/DiagMCMVolPres
+
+#image Data/Ark/ArkSpots5Orig.bz2
+#saveName Data/Ark/ArkMCMVolPres
+
+#image Data/Tube/NoisyTubeOrig5.bz2
+#saveName Data/Tube/TubeMCMVolPres
+
+#image Data/Cube/CubeOrig6.bz2
+#saveName Data/Cube/cubeMCMVolPres
+
+image Data/Sphere/SphereOrig6.bz2
+saveName Data/Sphere/sphere2LongEllipsoid

@@ -1,0 +1,29 @@
+# grid level
+level           5
+
+# use lumped mass matrix?
+useLumpedMassMat 0
+
+# time step in s
+tau             10.0
+
+numTimesteps    100
+savePlyEvery    20
+
+# edge length of bounding box in m
+sigma           0.2
+
+# volume of real water in m^3
+volume_RWater   0.0004009
+
+# "initial" heat conducitivity of meat and virtual water in  W K^{-1} m^{-1}
+lambda_Meat     1.0
+lambda_VWater   100.0 
+
+# product of density and mass-specific heat capacity (i.e. volume-specific heat capacity) for meat and real water in J K^{-1} m^{-3}
+rhoC_Meat       1.1167e6
+rhoC_RWater     4.1868e6
+
+# initial temperatures of water and meat in K
+initialTemperatureMeat  277.15
+initialTemperatureWater 297.15

@@ -1,0 +1,18 @@
+atree_file		trees/a_28_128.tree
+vtree_file		trees/v_28_128.tree
+
+root_speed		0.85
+
+armijo_min_decrease 	0.5
+armijo_sigma		0.5
+armijo_beta		0.4
+armijo_s		0.2
+armijo_max_steps 	50
+
+max_solv_steps		500
+solv_epsilon		1e-16
+
+mingridlevel		3
+maxgridlevel		4
+
+continue		0

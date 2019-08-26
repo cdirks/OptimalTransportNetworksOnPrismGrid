@@ -1,0 +1,24 @@
+# inputImage0, inputImage1 - input images to be registered
+# segmMethod               - 0 for Modica-Mortola segmentation, 1 for Ambrosio-Tortorelli segmentation
+# a                        - weight of registration mismatch energy
+# nu, alpha                - weight of perimeter penalization and fitting term of segmentation energy
+# elastWeight1...3         - weight of length-, area-, and volume penalization in registration deformation regularization
+# saveDir                  - directory for saving results
+
+inputImage0 ...
+inputImage1 ...
+
+segmMethod 0
+
+level         { 5   6   7   8   9 }
+numIter       { 200 200 200 200 200 }
+
+a             { 1e2 1e2 1e2 1e2 1e2 }
+nu            { 50  50  50  50  50 }
+alpha         { .5  .5  .5  .5  .5 }
+epsilon       { .03 .015 .008 .004 .002 }
+elastWeight1  { 1e2 1e2 1e2 1e2 1e2 }
+elastWeight2  { 0   0   0   0   0 }
+elastWeight3  { 1e2 1e2 1e2 1e2 1e2 }
+
+destDirectory ...

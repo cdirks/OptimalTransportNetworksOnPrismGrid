@@ -1,0 +1,19 @@
+TemplateDataFile				../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p8_VirtualTSNoisy.vtk_01.bin
+ReferenceDataFile				../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p1_OS_129x129_cube.vtk_01_closed_sdf_8.raw
+ReferenceDataSamplingFile		../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p1_VirtualTSNoisy.vtk_01.bin
+GTDeformedReferenceDataSDFFile	../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p1_OS_129x129_cube.vtk_01_closed_sdf_8.raw
+GTDeformedReferenceDataMeshFile	../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p8_OS_129x129_cube.vtk_01.ply
+SaveDirectory					../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/VirtualTSNoisy/8-1/
+
+ReferenceDataMeshFile			../../../../../2011/Data/Bonn/RealData/11-11-24/SUBJECT/Abdomen/8P_OS_129x129/Abdomen.ris_SL_p1_OS_129x129_cube.vtk_01.ply
+
+GridSize2DX 129
+GridSize2DY 129
+
+ValidateDerivative 0
+
+Kappa 500
+Lambda 0.01
+
+SolverIterations 2000
+

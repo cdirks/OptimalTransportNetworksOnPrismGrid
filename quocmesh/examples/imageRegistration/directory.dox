@@ -1,0 +1,7 @@
+/**
+ * \dir
+ *
+ * \brief Image registration using mutual information as a similarity measure.
+ *
+ * \author Berkels
+ */

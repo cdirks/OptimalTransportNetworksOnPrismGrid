@@ -1,0 +1,69 @@
+SET ( SELECTED_MODULES
+      modules/aol
+      modules/bem
+      modules/eikonal
+      modules/multigrid
+      modules/narrowband
+      modules/qcsm
+      modules/quoc
+      modules/tpcfe )
+
+# projects that have their own CMakeLists.txt.
+SET ( SELECTED_PROJECTS )
+
+# projects that use CMakeLists.project.txt.
+SET ( SELECTED_STDPROJECTS
+      selfTest/aol
+      selfTest/bem
+      selfTest/eikonal
+      selfTest/multigrid
+      selfTest/narrowband
+      selfTest/qcsm
+      selfTest/quoc
+      selfTest/tpcfe )
+
+SET ( SELECTED_STDPROJECTS ${SELECTED_STDPROJECTS}
+      finishedProjects/boneelast
+      finishedProjects/crystalSegmentation
+      finishedProjects/flowSegmentation
+      finishedProjects/mcm2d
+      finishedProjects/sparseSurfaceRegistration
+      finishedProjects/surfaceRegistration
+      finishedProjects/tpcfe
+      finishedProjects/vecfieldInpainting
+      finishedProjects/vesseltree )
+
+SET ( SELECTED_STDPROJECTS ${SELECTED_STDPROJECTS}
+      examples/adaptiveGrids
+      examples/AmbrosioTortorelli
+      examples/anisotropicDiffusion
+      examples/anisotropyVisualization
+      examples/BartonNackman
+      examples/bem
+      examples/debugging
+      examples/DirichletBCs
+      examples/fastSweepingSignedDist
+      examples/heatequation
+      examples/higherOrderFE
+      examples/imageManipulation
+      examples/imageRegistration
+      examples/multigrid
+      examples/MumfordShahSegmentation
+      examples/Newton
+      examples/plotter
+      examples/rowIterator
+      examples/RudinOsherFatemiModel
+      examples/simultaneouslyAssembled
+      examples/sweepingSignedDist
+      examples/tpcfe
+      examples/tvSmoothing
+      examples/vectorMatrixOps
+      examples/virtualBaseClasses )
+
+SET ( SELECTED_STDPROJECTS ${SELECTED_STDPROJECTS}
+      tools/benchmark
+      tools/image/analyzer
+      tools/image/converter
+      tools/image/manipulator
+      tools/image/visualizer
+      tools/triangManipConv )

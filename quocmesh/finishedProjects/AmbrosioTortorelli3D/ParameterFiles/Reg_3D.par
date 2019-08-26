@@ -1,0 +1,25 @@
+reference  ../../../input/3D/Jasmin_r
+template   ../../../input/3D/Jasmin_t
+#reference  ../../../input/3D/mrhead.raw
+#template   ../../../input/3D/cthead.raw
+#reference  ../../../input/3D/ct257_patient1.raw
+#template   ../../../input/3D/ct257_patient2.raw
+#reference  ../../../input/3D/mri257_patient1.raw
+#template   ../../../input/3D/mri257_patient2.raw
+saveDirectory results/
+
+epsilonFactor 0.5
+
+
+
+alpha          1.0
+beta           2550.0
+
+lambda         10.0
+
+startLevel 3
+stopLevel 7
+precisionLevel 7
+iterationsPerLevel 10
+
+checkboxWidth 32

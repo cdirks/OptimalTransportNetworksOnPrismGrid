@@ -1,0 +1,32 @@
+#reference  ../../../input/2D/cubemoved.pgm
+#template ../../../input/2D/cube.pgm
+#reference  ../../../input/2D/cubemoved_noise.pgm
+#template ../../../input/2D/cube_noise.pgm
+#reference ../../../input/2D/rdata.pgm
+#template ../../../input/2D/tdata.pgm
+reference ../../../input/2D/pet.pgm
+template ../../../input/2D/ctmoved.pgm
+#reference ../../../input/2D/pet_noise2.pgm
+#template ../../../input/2D/ctmoved_noise2.pgm
+#reference ../../../input/2D/t2extrmoved.pgm
+#template ../../../input/2D/t1extr.pgm
+#reference  ../../../input/2D/t1.pgm
+#template   ../../../input/2D/t2moved.pgm
+#reference  ../../../input/2D/cortex_square_pic.pgm
+#reference  ../../../input/2D/cortex_square_pic_cartoon.pgm
+#template   ../../../input/2D/cortex_square_3d.pgm
+#template   ../../../input/2D/cortex_square_3d_cartoon_smooth.pgm
+saveDirectory results/
+
+lambda         20.0
+beta_hist      1.0
+numberOfIntensityLevels 6
+ 
+
+startLevel 5
+stopLevel 8
+precisionLevel 8
+
+#checkboxWidth 128
+checkboxWidth 32
+

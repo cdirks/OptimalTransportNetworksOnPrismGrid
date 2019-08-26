@@ -1,0 +1,27 @@
+level              7
+levelsetFilename   datasets/AlPMMA5_60u_L7.dat.bz2
+plyFNMask          out/AlPmmA5_60u_Temperature_L7_%03d_%%d_%%03d.ply.bz2
+dataFNMask         out/AlPmmA5_60u_Temperature_L7_%03d.dat.bz2
+
+tauSlow            0.05
+tauFast            1.00
+
+numTimestepsSlow   40
+numTimestepsFast   98
+
+saveTSEverySlow    1
+saveTSEveryFast    1
+
+explicitLevel      3
+numSmooth          3
+
+sigma              6.81e-03
+lambda_Al          237.0
+lambda_PmmA        0.190
+rhoC_Al            2.43e+06
+rhoC_PmmA          1.7493e+06
+
+# temperatures in K: sublimation point of CO2 -78.5°C, boiling point of water 100°C, room temperature 20°C
+DirichletValueBottom  194.65
+DirichletValueTop     373.15
+InitialValue          293.15

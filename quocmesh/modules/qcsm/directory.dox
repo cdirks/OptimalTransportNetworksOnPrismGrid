@@ -1,0 +1,8 @@
+/** \namespace qcsm
+ *  \brief Triangle meshes and their conversion from and to QuOcMesh data.
+ *  See Module Documentation \ref qcsmdoc.
+ */
+
+//! @dir
+//! @brief Triangle meshes and their conversion from and to QuOcMesh data.
+//! See Module Documentation @ref qcsmdoc.

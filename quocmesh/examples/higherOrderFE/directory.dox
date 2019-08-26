@@ -1,0 +1,8 @@
+//! @dir
+//!
+//! @brief Higher order finite elements
+//!
+//! This example demonstrates the finite element method using higher order basis functions.
+//! At the moment there are just bi-quadratic elements in 2D besides the linear ones.
+//!
+//! @author Geihe

@@ -1,0 +1,19 @@
+#image
+#reference       ../../../input/3D/Jasmin_1.raw
+reference       ../../../input/3D/mrhead.raw
+
+#parameters
+epsilon        0.00390625
+#epsilon        0.00195313
+alpha          0.1
+beta           2550.0
+
+presmooth 0
+presmoothFactor 0
+epsilonFactor 1.28
+# this will make epsilon = 0.005 on level 8
+#epsilonFactor 2.56
+# this will make epsilon = 0.01 on level 8
+startLevel 6
+stopLevel 7
+highestLevel 8

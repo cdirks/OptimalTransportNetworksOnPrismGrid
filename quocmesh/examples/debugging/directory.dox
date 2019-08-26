@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief Examples for code profiling and debugging tools
+//!
+//! Currently there are examples for usage of
+//! <ul><li>efence</li><li>duma</li><li>valgrind</li><li>gprof</li></ul>
+//! See corresponding files for further details.
+//!
+//! @author Schwen, Geihe

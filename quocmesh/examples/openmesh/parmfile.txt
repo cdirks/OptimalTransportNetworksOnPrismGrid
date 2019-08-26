@@ -1,0 +1,5 @@
+ inputFilename      ../testdata/torus.ply
+ outputFilename     torus20StepsMCM.ply
+ fileFormat         ply      
+ numSteps           20
+ tau                1e-2

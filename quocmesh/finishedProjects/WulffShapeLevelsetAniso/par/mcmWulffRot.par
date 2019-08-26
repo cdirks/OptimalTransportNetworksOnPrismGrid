@@ -1,0 +1,71 @@
+# time-dependend stuff
+
+tau         0.05
+timesteps   401
+
+# bool, whether data in each time-step should be rescaled to [0,1]
+rescale 0
+
+# save every "timeOffset" timestep
+timeOffset  50
+
+lambda 2.5
+
+image Data/MRAVolume/SmallCutThr70_L10_Tau005_NoVP_200.bz2
+#SmallCutThr70_L10_Tau025_GVP_0000.bz2
+loadRotationName Data/MRAVolume/SmallCutThr70_Axis
+saveName Data/MRAVolume/SmallCThr70_Tau005_NoVPPlus200
+
+
+#image Data/2Balls/2Balls5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/2Balls/NewRot2Balls2Ellipsoids
+
+#image Data/SimpleArk/SmoothedSimpleArkOrig5.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/SimpleArk/BigTSlocalVolPresSimpleArkWSRot
+
+
+#image Data/TubeDiag/TDiagOrig5.bz2
+#loadRotationName Data/Diagonale/SmoothedNoisyDiagRotation5Fw10
+#saveName Data/Tests/TubeDiagRotPresWS5
+
+
+#image Data/Diagonale/NoisyDiag5Smooth.bz2
+#loadRotationName Data/Diagonale/SmoothedNoisyDiagRotation5Fw10
+#loadRotationName Data/Diagonale/NoisyDiagRotation5Smooth
+#saveName Data/Diagonale/DiagSmoothRotWS
+
+#image Data/Ark/NoisyArk5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/Ark/ArkFw10SmoothWSRot
+
+#image Data/Torus5/NoisyTorusOrig5.bz2
+#saveName Data/Torus5/NoisyTorusWSRotatedIsotrTest
+#loadRotationName Data/Torus5/rotation5
+
+#image Data/TubeDiag/TDiagOrig5.bz2
+#saveName Data/TubeDiag/TDiagWSRotatedLittleTimeStep
+
+#image Data/TubeDiag/NoisyTube5.bz2
+#loadRotationName Data/Diagonale/NoisyDiagRotation5Smooth
+#saveName Data/TubeDiag/TDiagWSRotated
+
+#image Data/Cube/CubeOrig5.bz2
+#saveName Data/Cube/CubeEllipsoidFine
+
+#image Data/Tube/TubeOrig5.bz2
+#saveName Data/Tube/TubeWSVert
+
+#image Data/Sphere/SphereOrig.bz2
+#saveName Data/Sphere/Sphere2RotatedEllipsoid
+
+#image Data/HorizLine/HLOrig5.bz2
+#saveName Data/HorizLine/HLWulff
+
+#image Data/Block/BlockOrig.bz2
+#saveName Data/Block/BlockWSEllipsoid
+
+#image  Data/Diagonale/DiagOrig5.bz2
+#saveName Data/Diagonale/DiagWSRotated
+#loadRotationName Data/Diagonale/rotation5

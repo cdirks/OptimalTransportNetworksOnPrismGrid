@@ -1,0 +1,18 @@
+//! @dir
+//!
+//! @brief coupled advection/diffusion simulations on 2D blood vessel structures
+//!
+//! Code for my Diplom thesis.
+//! <ul>
+//! <li> Construction of pairs 2D blood vessel trees by a method called
+//! "constrained constructive optimization" and balancing of flow
+//! velocities that prevent dominating large range flow through
+//! surrounding tissue.</li>
+//! <li> Advection simulation through these arterial and venous blood 
+//! vessel structures using a Eulerian-Lagrangian locally augmented 
+//! method (ELLAM)</li>
+//! <li> coupled advection-diffusion (in the surrounding tissue) simulations
+//! via mutual source terms</li>
+//! </ul>
+//!
+//! @author Schwen

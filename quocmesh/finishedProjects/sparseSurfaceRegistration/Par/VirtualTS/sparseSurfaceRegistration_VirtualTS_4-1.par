@@ -1,0 +1,16 @@
+ReferenceDataFile				../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p1_OS_129x129_cube.vtk_01_closed_sdf_8.raw
+ReferenceDataSamplingFile		../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p1_VirtualTS.vtk_01.bin
+ReferenceDataMeshFile			../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p1_OS_129x129_cube.vtk_01.ply
+
+TemplateDataFile				../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p4_VirtualTS.vtk_01.bin
+GTDeformedReferenceDataSDFFile	../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p4_OS_129x129_cube.vtk_01_closed_sdf_8.raw
+GTDeformedReferenceDataMeshFile	../../../../../2011/Data/Bonn/RealData/11-11-24/Test/Abdomen.ris_SL_p4_OS_129x129_cube.vtk_01.ply
+
+SaveDirectory					../../../../../2011/Data/Bonn/RealData/11-11-24/Test/VirtualTS/4-1/
+
+GridSize2DX 129
+GridSize2DY 129
+
+ValidateDerivative 0
+
+SolverIterations 2000

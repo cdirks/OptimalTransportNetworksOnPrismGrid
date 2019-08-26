@@ -1,0 +1,62 @@
+#input-image  ../../../input/2D/rectangle.pgm
+#input-image  ../../../input/2D/cvtest65.pgm
+#input-image  ../../../input/2D/boxInpainting.dat 
+#input-velocity {../../../input/2D/boxInpaintingFlowX.dat ../../../input/2D/boxInpaintingFlowY.dat}
+#input-velocity {../../../input/2D/boxInpaintingFlow2X.dat ../../../input/2D/boxInpaintingFlow2Y.dat}
+#input-velocity {../../../input/2D/boxInpaintingFlow2X.dat_noise_0.2.dat.bz2 ../../../input/2D/boxInpaintingFlow2Y.dat_noise_0.2.dat.bz2}
+
+#input-image  ../../../input/2D/marbleInpainting.dat 
+#input-velocity {../../../input/2D/marbleInpaintingGroundTruthX.dat ../../../input/2D/marbleInpaintingGroundTruthY.dat}
+
+#input-image  ../../../input/2D/complexRegionInpainting.dat
+#input-image  ../../../input/2D/complexRegionInpaintingSmooth.dat 
+#input-velocity {../../../input/2D/complexRegionInpaintingFlowX.dat ../../../input/2D/complexRegionInpaintingFlowY.dat}
+#input-velocity {../../../input/2D/complexRegionInpaintingFlow2X.dat ../../../input/2D/complexRegionInpaintingFlow2Y.dat}
+#input-mask  ../../../input/2D/complexRegionInpaintingConfidence.dat 
+
+#input-image  ../../../input/2D/complexRegionInpaintingLarge.dat 
+#input-velocity {../../../input/2D/complexRegionInpaintingLargeFlowX.dat ../../../input/2D/complexRegionInpaintingLargeFlowY.dat}
+#input-mask  ../../../input/2D/complexRegionInpaintingLargeConfidence.dat 
+
+#input-image  ../../../input/2D/rubberWhale.cimg_03_00.bz2
+#input-velocity {../../../input/2D/rubberWhaleFlow3.cimg_00_00.bz2 ../../../input/2D/rubberWhaleFlow3.cimg_00_01.bz2}
+#input-mask  ../../../input/2D/rubberWhaleFlowMask3.cimg_00_00.bz2  
+
+#input-image  ../../../input/2D/image.cimg_01_00.bz2 
+#input-velocity {../../../input/2D/gT.cimg_00_00.bz2 ../../../input/2D/gT.cimg_00_01.bz2 }
+#input-mask  ../../../input/2D/conf.cimg_00_02.bz2
+
+input-image  ../../../input/2D/image.cimg_00_00.cropped.bz2 
+#input-velocity {../../../input/2D/gT.cimg_00_00.cropped.bz2 ../../../input/2D/gT.cimg_00_01.cropped.bz2 }
+input-velocity {../../../input/2D/gT.cimg_00_00.cropped.bz2_noise_0.2.dat.bz2 ../../../input/2D/gT.cimg_00_01.cropped.bz2_noise_0.2.dat.bz2}
+#input-mask  ../../../input/2D/conf.cimg_00_02.cropped.bz2
+input-mask  ../../../input/2D/conf.cimg_00_02.cropped_alt.pgm 
+
+#initial-velocity {v_vec_000.bz2 v_vec_001.bz2}
+
+dilateMaskBy    2
+
+saveDirectory results
+
+saveOffset      100
+numSaveFirst    5
+numSteps        30000
+
+epsilon         0.1
+delta           0.001
+mu              1.0
+# nu = lambda in the paper
+nu              0.01
+#nu              0.003125
+#nu              0.0
+# lambda = nu in the paper
+lambda          0.1
+theta           0.5
+# rho = number of pixels used for the overlap if weightRegTermWithOneMinusH is used
+rho             6
+
+#doTrueInpainting              1
+useDilationToIncreaseMaskSize 1
+
+weightRegTermWithOneMinusH
+

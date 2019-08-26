@@ -1,0 +1,10 @@
+library comparison
+==================
+
+tapio with gcc 4.3.0, dirichlet benchmark with ahmed
+
+                                             nupsi     wupsi
+
+standard blas & standard lapack 3.1.1         110       169
+atlas 3.9.11  & standard lapack 3.1.1         120       194
+intel mkl 10.2                                140       251

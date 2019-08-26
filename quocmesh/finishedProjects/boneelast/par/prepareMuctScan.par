@@ -1,0 +1,32 @@
+scan_filenamemask       /nosave/schwen/CT-Scans/AlPmmA1-1/BMP/C5_%04d.pgm
+roiFilename            out/test_roi.dat.bz2
+denFilename            out/test_den.dat.bz2
+
+# scan data to be loaded
+scan_first_slice        40
+scan_last_slice         132
+
+scan_size_x             482
+scan_size_y             482
+
+# definition of area of interest
+origin_x                120
+origin_y                115
+
+length_x                50
+length_y                50
+
+
+# denoising parameters
+numAnisoSteps         4
+
+lambda                  2.0
+rho_factor              1.2
+sigma_factor            0.7
+
+tau_factor              1.0
+
+removePoempels         0
+
+numLinsmoothSteps     0
+linsmooth_tau           0.0

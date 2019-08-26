@@ -1,0 +1,18 @@
+---------------
+ release 05180
+---------------
+* added cmake checks for win32, set FOX_INCS and FOX_LIBS
+* fixed missing return in cone example
+* replaced peaks example with imgsurf
+
+---------------
+ release 05185
+---------------
+* fixed override problem with UpdateSize
+
+---------------
+ release 06064
+---------------
+* added makeCurrent/makeNonCurrent calls to the render() function
+* added GetClassNameW() function as suggested by user
+* added grab/ungrab calls as suggested by user

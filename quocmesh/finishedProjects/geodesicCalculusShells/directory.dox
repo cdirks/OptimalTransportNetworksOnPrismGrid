@@ -1,0 +1,28 @@
+//! @dir
+//!
+//! @brief Several tools to compute discrete geodesic operators on the space of thin shells.
+//!
+//! (1) Geodesics / interpolation: Compute geodesic (i.e. shortest path) between
+//!     two given input shells represented as triangular meshes.
+//!     Call "computeGeodesic.cpp" together with a parameter file, e.g. parComputeGeodesic.txt
+//!
+//! (2) Exponential map / geodesic shooting / extrapolation: Compute geodesic path for a given input shell
+//!     and another shell which is a variation of the first one, hence representing an initial velocity.
+//!     Call "shootGeodesic.cpp" together with a parameter file, e.g. parShootGeodesic.txt
+//!
+//! (3) Parallel transport / detail transfer: Discrete parallel transport realized by construction
+//!     of geodesic parallelograms (Schild's ladder) to transport for a given sequence of shells 
+//!     a variation/displacement of the first shell to the last one.
+//!     Call "computeParallelTransport.cpp" together with a parameter file, e.g. parComputeParallelTransport.txt
+//!
+//! (4) Elastic / geodesic averaging: For a set of input shapes compute a geodesic average and connecting geodesics,
+//!     s.t. the total sum of path energies is minimized.
+//!     If the number of shells in the connecting discrete geodesics is set to zero, an elastic average is computed,
+//!     i.e. a minimzer of the sum of deformation energies from the input shapes to an (elastic) averaging shell.
+//!
+//! For further information on discrete geodesics calculus (in particular on the space of thin shells) see
+//! [1] B. Heeren, M. Rumpf, P. Schröder, M. Wardetzky, and B. Wirth. Exploring the geometry of the space of shells. Computer Graphics Forum, 33(5), 2014.
+//! [2] B. Heeren, M. Rumpf, M. Wardetzky, and B. Wirth. Time-discrete geodesics in the space of shells. Computer Graphics Forum, 31(5):1755-1764, 2012.
+//! [3] M. Rumpf and B. Wirth. Variational time discretization of geodesic calculus. IMA Journal of Numerical Analysis, 2014.
+//!
+//! @author Heeren

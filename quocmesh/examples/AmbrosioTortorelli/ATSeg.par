@@ -1,0 +1,9 @@
+input-image ../testdata/image_129.pgm.bz2
+
+saveDirectory   output/
+
+epsilon        0.002
+alpha          0.05
+beta           255.0
+
+numSteps       100

@@ -1,0 +1,14 @@
+NUMTIMESTEPS	51
+ATREEFILENAME	trees/a_28_32_s.tree
+VTREEFILENAME	trees/v_28_32_s.tree
+LEVEL		8
+TAUOVERH	0.5
+CGEPSILON	1e-16
+CGITER	 	5000
+PICTUREFILENAME	output/temperatures%04d.pgm
+COLORPICFN	output/temperatures%04d.ppm
+DATAFILENAMES	output/data_%04d.dat
+
+SCALEFACTOR 	0
+rhs_scale	1.0
+kappa		1.0

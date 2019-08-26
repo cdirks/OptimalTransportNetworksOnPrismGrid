@@ -1,0 +1,14 @@
+//! @dir
+//!
+//! @brief Executes several steps of mean curvature motion.
+//!
+//! Executes several steps of mean curvature motion. Parameter files have the format:
+//! \begin{verbatim}
+//! inputFilename      [...].ply
+//! outputFilename     [...].ply
+//! fileFormat         { UDply | ply }       (optional)
+//! numSteps           [int]
+//! tau                [float]
+//! \end{verbatim}
+//!
+//! @author Heeren, von Deylen

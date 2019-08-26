@@ -1,0 +1,55 @@
+# time-dependend stuff
+
+tau         0.05
+timesteps   301
+
+# save every "timeOffset" timestep
+timeOffset  10
+
+lambda 2.5
+
+image Data2D/Abs/MinusAbsX8.bz2
+saveName Data2D/Abs/MinusAbsX8.bz2
+
+#image Data/Sphere/NoisySphere6.bz2
+#saveName Data/Tests/Sphere2Cone
+
+#image Data/Ellipsoid/Ellipsoid6SD.bz2
+#saveName Data/Ellipsoid/TS0.2LittleWS_Ellipsoid6SD
+
+#image Data/Cube/NoisyCube5.bz2
+#saveName Data/Cube/VortragEvolution
+
+#image Data/2Balls/2Balls5Smooth.bz2
+#saveName Data/2Balls/2Balls2Ellipsoids
+
+#image Data/2Cigars/2Cigar5Smooth.bz2
+#saveName Data/2Cigars/2CigarsNotSoLargeEllipsoid
+
+#image Data/Torus5/NoisyTorusOrig5.bz2
+#saveName Data/Torus5/NoisyTorusEllipsoidTest
+
+#image Data/TubeDiag/NoisyTube5.bz2
+#saveName Data/TubeDiag/NoisyTDiagTest
+
+#image Data/Cube/Noisy5Cube.bz2
+#saveName Data/Cube/NoisyCubeEllipsoidTest
+
+#image Data/Tube/TubeOrig5.bz2
+#saveName Data/Tube/TubeDiagTest
+
+#image Data/Sphere/SphereOrig.bz2
+#saveName Data/Sphere/Sphere2QNorm
+
+#image Data/HorizLine/HLOrig5.bz2
+#saveName Data/HorizLine/HLWulff
+
+#image Data/Block/NoisyBlock5SD.bz2
+#SmoothBlockOrig5SD.bz2
+#saveName Data/Block/NoisyBlockWSEllipsoid
+
+#image  Data/Diagonale/NoisyDiag5Smooth.bz2  #NoisyDiagOrig5.bz2
+#saveName Data/Diagonale/NoisyDiagTest
+
+#image Data/Ark/NoisyArkOrig5.bz2
+#saveName Data/Ark/Ark5Fw10_fixDirection

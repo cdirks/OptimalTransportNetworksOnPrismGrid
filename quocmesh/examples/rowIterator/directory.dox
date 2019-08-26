@@ -1,0 +1,7 @@
+//! @dir
+//!
+//! @brief Exemplary use of row iterators and row entries.
+//!
+//! Small row iterator/row entry example.
+//!
+//! @author Droske, Lenz, von Deylen

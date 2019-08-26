@@ -1,0 +1,10 @@
+depth             8
+dcMinus           237.0
+dcPlus            0.190
+
+sliceIndex        214
+
+geometryFilename  /nosave/schwen/AlPmmATemperature_Level8/AlPmmA2_L8.dat.bz2
+valuesFilename    /nosave/schwen/AlPmmATemperature_Level8/AlPmmATemperature_L8_038.dat.bz2
+PLYFilename       /nosave/schwen/AlPmmATemperature_Level8/AlPmmATemperature_L8_038.ply
+PLYFNMask         /nosave/schwen/AlPmmATemperature_Level8/AlPmmATemperature_L8_038_%d_%03d.ply

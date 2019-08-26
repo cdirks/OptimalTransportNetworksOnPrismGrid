@@ -1,0 +1,44 @@
+# loadnames:
+startShape <filename>.ply
+endShape <filename>.ply
+
+# num of shells K (if cascadic optimization mode is chosen we have K = 2^L +1, where L is number of cascadic levels)
+numOfShells 5
+cascadicLevels 2
+
+# weights
+bendWeight 0.0001
+tangWeight 1.0
+lengthweight 1.0
+volweight 1.0
+
+# if multilevel method is chosen: choose number of levels, where the number of nodes is reduced by factor theta from level to level
+multilevel 2
+theta 0.5
+
+# if red-black alternating is chosen: choose number of alternating steps
+redBlackSteps 3
+
+#SolverMethod{ 0 = GRADIENTDESCENT, 1 = QUASINEWTON, 2 = NEWTON }
+solverMethod 2
+#SolverType{ 0 = Cholesky, 1 = BiCholesky, 2 = LU, 3 = CG }
+solverType  2
+
+numOfDescentSteps 10000
+
+# true, if boundary should be fixed
+fixBoundary 0
+#bdryMask <maskname>.txt
+
+# should use Lagrange setup to incorporate rigid body motions properly
+LagrangeSetup 1
+# otherwise, the Hessian has to be regularized
+regularizeMatrix 0
+    
+# initialize trivially (i.e. all shapes are set to the start shape), otherwise linear interpolation of nodal positions    
+initializeTrivially 1
+
+# directory where results are supposed to be stored
+destDirectory <path>
+savenameStem <stem>
+

@@ -1,0 +1,8 @@
+/** \namespace eik
+ *  \brief Eikonal equation solvers.
+ *  See Module Documentation \ref eikonaldoc.
+ */
+
+//! @dir
+//! @brief Eikonal equation solvers.
+//! See Module Documentation @ref eikonaldoc.

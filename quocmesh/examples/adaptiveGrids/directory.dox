@@ -1,0 +1,11 @@
+//! @dir
+//!
+//! @brief Example for rudimentary implementation of adaptive grids
+//!
+//! This example contains an example of how the current rudimentary implementation of
+//! adaptive grids works (the full finest grid and data structures for it are used, but 
+//! only a subset of the DOF is actually used, basis functions have bigger support than
+//! in the non-adaptive case). 
+//! The code is based on an old implementation by Preusser.
+//!
+//! @author Paetz

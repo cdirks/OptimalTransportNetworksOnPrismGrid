@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief benchmarks
+//!
+//! programs for benchmarks (to be normalized such that one processor on brahma at
+//! a fixed time/compiler has 100 nupsi).
+//! Some results are also collected here.
+//!
+//! @author Schwen

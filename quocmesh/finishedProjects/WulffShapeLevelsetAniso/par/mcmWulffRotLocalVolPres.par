@@ -1,0 +1,102 @@
+# time-dependend stuff
+
+tau         0.2
+timesteps   201
+
+# save every "timeOffset" timestep
+timeOffset  10
+
+# must be big enough for stability (see Dziuk/Deckelnick)
+lambda 2.5
+
+# if useRadii==0 => the fix radius of the ball for the local average curvature in elements this radius should already be multiplied with grid.h 
+epsilon  0.06 #0.24
+
+# --------- FileName of the area / volume file -------------------
+
+
+saveAreaFileName Data/VolumeTestTorus/AreaVolumeResults/temp.dat
+saveVolumeFileName Data/VolumeTestTorus/AreaVolumeResults/temp.dat
+
+#saveAreaFileName Data/VolumeTestTorus/AreaVolumeResults/Radius002Ball006TS0105Area6.dat 
+#saveVolumeFileName Data/VolumeTestTorus/AreaVolumeResults/Radius002Ball006TS005Volume6.dat 
+
+#saveAreaFileName Data/CurvedJunction/CJunctionMCMAreaRad004TS005
+#saveVolumeFileName Data/CurvedJunction/CJunctionMCMVolumeRad004TS005
+
+#saveAreaFileName Data/VolumeTestTorus/AreaVolumeResults/LittleBallWDRad006TS02_Area.dat
+#saveVolumeFileName Data/VolumeTestTorus/AreaVolumeResults/LittleBallWDRad06TS02_Volume.dat
+
+
+# ------------ Data-stuff ------------------------------
+
+image Data/Helix/Helix6SmoothSD.bz2
+loadRotationName Data/Helix/Helix6NoisySmoothAxis
+saveName Data/Helix/TEST_TPCFE_STUFF_Helix
+
+
+#image Data/Ellipsoid/Ellipsoid6SD.bz2
+#loadRotationName Data/Block/ConstantXVF6
+#saveName Data/Ellipsoid/ItsJustATest
+
+#image Data/Sphere/SphereOrig6.bz2
+#loadRotationName Data/Block/ConstantXVF6
+#saveName Data/Sphere/Sphere2LongEllipsoid
+
+
+#image Data/Ball/LittleSmoothBall5.bz2
+#loadRotationName Data/Block/ConstantXVF
+#saveName Data/Ball/LittleBallWithDirectionsRad006TS02
+
+
+#image Data/CurvedJunction/SmoothedCurvedJunctionOrig6.bz2
+#loadRotationName Data/CurvedJunction/CJSmoothedRotation
+#saveName Data/CurvedJunction/MCMTS005CJunctionRadius004
+
+#image Data/VolumeTestTorus/Radius002Torus5.bz2
+#loadRotationName Data/VolumeTestTorus/VFTorus
+#saveName Data/VolumeTestTorus/Radius002/deleteme
+
+
+#image Data/2Balls/2Balls5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/2Balls/2Directions5.bz2
+
+
+#image Data/Tests/SmoothOneBall6.bz2
+#loadRotationName Data/VolumeTestTorus/SmoothedVF6Torus
+#saveName Data/Tests/OneBall2Torus
+
+#image Data/Tests/xAxisPiece5Smooth.bz2
+#image Data/Tests/PlaneOrig5.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/Tests/PieceLittleTimeStepLocVPWSxAxis5
+
+#image Data/Tests/xAxisLine5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/Tests/LocVPWSLittleTimeStepxAxisLine5
+
+
+#image Data/TolgaDataKlein/TestBlockOrig64Smooth.bz2
+#loadRotationName Data/TolgaDataKlein/smoothTestBlock6Rotation
+#saveName Data/TolgaDataKlein/2LocVPWSTestBlock64
+
+
+#image Data/2Cigars/2Cigar5Smooth.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/2Cigars/Neu2CigarsLocVP
+
+
+#image Data/StraitJunction/Ausgangsbild.bz2
+#loadRotationName Data/StraitJunction/smoothRotation
+#smoothSJRotation #smooth2_rotationSJ6Fw7
+#saveName Data/StraitJunction/NeuSJRadiiSmoothedVF
+
+
+#image Data/SimpleTorus/SmoothedSimpleTorusOrig5.bz2
+#loadRotationName Data/Torus5/rotation5
+#saveName Data/SimpleTorus/SimpleTorusWSRot
+
+#image Data/SimpleArk/SmoothedSimpleArkOrig5.bz2
+#loadRotationName Data/Ark/smooth_rotation5Fw10
+#saveName Data/SimpleArk/NewLocalVPArk

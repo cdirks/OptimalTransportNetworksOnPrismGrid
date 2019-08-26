@@ -1,0 +1,8 @@
+/** \namespace mg
+ *  \brief Multigrid methods.
+ *  See Module Documentation \ref multigriddoc.
+ */
+
+//! @dir
+//! @brief Multigrid methods.
+//! See Module Documentation @ref multigriddoc.

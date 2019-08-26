@@ -1,0 +1,19 @@
+dcPlus            1.0
+dcMinusValues    { 2 4 }
+
+numSmooth         3
+epsilon           1.0e-16
+
+level             5
+explicitLevel     3
+numSmooth         3
+
+levelsetFilename  datasets/ballLaminate_5.dat.bz2
+
+problemType      100
+
+doCFEMG         1
+doCG            1
+doPCG           1
+doAMG           1
+

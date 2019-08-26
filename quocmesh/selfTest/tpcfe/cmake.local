@@ -1,0 +1,3 @@
+QUOC_ADD_BENCH ( tpcfeBenchmark )
+QUOC_ADD_TEST_FROM_CPP_BASENAME ( tpcfeBenchmark )
+QUOC_ADD_TEST_FROM_CPP_BASENAME ( selfTest )

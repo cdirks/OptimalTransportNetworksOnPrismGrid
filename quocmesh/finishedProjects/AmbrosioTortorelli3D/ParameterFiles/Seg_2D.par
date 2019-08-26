@@ -1,0 +1,28 @@
+#image
+#reference       ../../../input/2D/canonbilder.pgm
+#reference       ../../../input/2D/t2.pgm
+#reference       ../../../input/2D/square.pgm
+#reference       ../../../input/2D/oldbuild3.pgm
+#reference       ../../../input/2D/oldbuild3_noise.pgm
+#reference       ../../../input/2D/pet.pgm
+#reference       ../../../input/2D/lena.pgm
+#reference       ../../../input/2D/lena_noise.pgm
+#reference       ../../../input/2D/t1extr_noise.pgm
+reference       ../../../input/2D/t2extrmoved.pgm
+#reference        ../../../input/2D/cortex_square_3d.pgm
+#reference        ../../../input/2D/cortex_square_pic.pgm 
+
+#parameters
+epsilon        0.00195313
+alpha          0.1
+beta           255.0
+
+presmooth 0
+presmoothFactor 0
+epsilonFactor 1.28
+# this will make epsilon = 0.005 on level 8
+#epsilonFactor 2.56
+# this will make epsilon = 0.01 on level 8
+startLevel 6
+stopLevel 8
+highestLevel 8

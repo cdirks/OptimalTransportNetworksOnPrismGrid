@@ -1,0 +1,52 @@
+atree_file		trees/a_28_32_s.tree
+vtree_file		trees/v_28_32_s.tree
+
+tree_files		output_smvs_we/profile_%05d.eps
+tiss_files		output_smvs_we/temperatures_%05d.pgm
+tiss_c_files		output_smvs_we/temperatures_%05d.ppm
+
+data_files		output_smvs_we/data_%05d.dat
+
+num_timesteps		90000
+save_every		200
+	
+xang_deg		30.0
+yang_deg		0.0
+zang_deg		0.0
+zzoom			0.15
+color_scale		1.0
+
+topview			0
+
+cg_epsilon		1e-16
+max_cg_iter		200
+solverquiet		1
+
+leveltissue		7
+levelvessels		9
+
+# color scaling, inverse fraction of half spectrum used.
+colorscalefactor	2.0
+
+# heat conduction coefficient in tissue
+kappa 			0.0001
+
+rad_adaption		2000.0
+
+init_tissue_temp	0.0
+init_vessel_temp	0.0
+plot_ctr_temp		0.5
+inflow_pulse		0
+inflow_temp		0.0
+
+# kappa_trans
+perc			0.05
+C_tis			1.0
+C_ves			1.0
+
+probe_present		1
+spos_x			0.78
+spos_y			0.3
+s_sigma			0.05
+s_value			1.0
+

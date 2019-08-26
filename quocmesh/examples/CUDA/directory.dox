@@ -1,0 +1,5 @@
+//! @dir
+//!
+//! @brief Small example programs illustrating how computations can be done in parallel on a GPU using CUDA.
+//!
+//! @author Berkels, Boerdgen

@@ -1,0 +1,49 @@
+#reference  ../../../input/2D/t2extrmoved.pgm
+#template   ../../../input/2D/t1extr.pgm 
+#reference  ../../../input/2D/t2extr.pgm
+#template   ../../../input/2D/t1extr_float_mov.pgm
+reference  ../../../input/2D/pet.pgm
+template   ../../../input/2D/ctmoved.pgm
+#reference  ../../../input/2D/cortex_square_pic.pgm
+#reference  ../../../input/2D/cortex_square_pic_cartoon.pgm
+#template   ../../../input/2D/cortex_square_3d.pgm
+#template   ../../../input/2D/cortex_square_3d_cartoon_smooth.pgm 
+#reference  ../../../input/2D/weight_test1.pgm
+#template   ../../../input/2D/weight_test2.pgm
+#reference  ../../../input/2D/cube.pgm 
+#template  ../../../input/2D/cubemoved.pgm 
+#reference  ../../../input/2D/lego-classified-trans.pgm 
+#template   ../../../input/2D/lego-rendered-AT-edges.png
+saveDirectory results/
+
+reference_Fold D:/MedicalImageData/Jasmin/tmp/Jasmin_1_pgm/Jasmin_r_
+template_Fold  D:/MedicalImageData/Jasmin/tmp/Jasmin_2_pgm/Jasmin_t_
+
+
+
+tau      1.
+alpha     2550.
+beta      1.
+nu     0.5
+epsilon   0.01
+epsilonFactor 0.5
+mu      0.1
+lambda  10.
+kappa   100.
+tau_ini 1.
+sigma   0.5
+
+gradient_steps 10
+
+startLevel 2
+stopLevel 8
+precisionLevel 8
+
+
+
+
+
+#checkboxWidth 128
+checkboxWidth 16
+
+saveAllIntermidiateResults 1

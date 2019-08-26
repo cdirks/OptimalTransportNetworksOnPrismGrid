@@ -1,0 +1,45 @@
+%\input{Ambro.tex}
+\section{3D Heat Equation Solution with Quocmesh}
+The heat equation is an important partial differential equation
+which describes the variation of temperature in a given region
+over time. In the special case of heat propagation in an isotropic
+and homogeneous medium in the 3-dimensional space, this equation
+is
+\begin{eqnarray}
+\partial_t u- \Delta u = 0
+\end{eqnarray}
+The weak form of above heat equation is
+\begin{eqnarray}
+ (\partial_t u, \phi) - (\Delta u, \phi) = 0
+\label{eq:weakForm_1}
+\end{eqnarray}
+for all $\phi$. Here $(u,v)=\int_\Omega u(x)\cdot v(x)\;dx$.
+According to the derivative rule
+\begin{eqnarray*}
+(\Delta u, \phi)
+=\int_\Omega \nabla\cdot\nabla u\cdot \phi\;dx =
+-\int_\Omega\nabla u\cdot\nabla \phi\;dx+
+\int_{\partial\Omega}\nabla u \cdot\nu\phi\;dx
+\end{eqnarray*}
+Because $\phi(x)=0 $ on $\partial\Omega$, so
+Eq.(\ref{eq:weakForm_1}) can be rewritten as
+\begin{eqnarray}
+ (\partial_t u, \phi) +(\nabla u, \nabla \phi)=0
+\end{eqnarray}
+For each $j=1...N$
+\begin{eqnarray}
+ \sum_i\partial_t u_i(\phi_i,\phi_j) + \sum_i u_i(
+ \nabla\phi_i,\nabla\phi_j)= 0
+\end{eqnarray}
+Organize the equation system in the way of matrix:
+\begin{eqnarray}
+M \overline{\partial_t U} + L \overline{U} = 0
+\end{eqnarray}
+where $M_{i,j}= (\phi_i,\phi_j)$ and $L_{i,j} =
+(\nabla\phi_i,\nabla\phi_j)$. For the discretization of time,
+ we use implicit backward scheme.
+\begin{eqnarray*}
+M \frac{\overline{U}^{k+1}-\overline{U}^{k}}{\tau} + L
+\overline{U}^{k+1} = 0 \ \Rightarrow \  \overline{U}^{k+1} =
+(M+\tau L)^{-1} M \overline{U}^k
+\end{eqnarray*}

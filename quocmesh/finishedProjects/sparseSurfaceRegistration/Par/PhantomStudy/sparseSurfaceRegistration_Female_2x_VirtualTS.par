@@ -1,0 +1,17 @@
+TemplateDataFile			../../../../../2011/Data/Bonn/PhantomStudy/Female/2x/FemaleScene.vtk_VirtualTS.vtk_01.bin
+ReferenceDataFile			../../../../../2011/Data/Bonn/PhantomStudy/Female/2x/FemaleScene.vtk_OS_129x129_cube.vtk_01_closed_sdf_8.raw
+DeformedReferenceDataFile	../../../../../2011/Data/Bonn/PhantomStudy/Female/2x/FemaleScene.vtk_OS_129x129_cube.vtk_01_closed_sdf_8_phiGT.raw
+SaveDirectory				../../../../../2011/Data/Bonn/PhantomStudy/Female/2x/VirtualTS/
+
+ReferenceDataMeshFile		../../../../../2011/Data/Bonn/PhantomStudy/Female/2x/FemaleScene.vtk_OS_129x129_cube.vtk_01.ply
+
+GridSize2DX 129
+GridSize2DY 129
+
+ValidateDerivative 0
+
+Kappa 500
+Lambda 0.01
+
+SolverIterations 2000
+

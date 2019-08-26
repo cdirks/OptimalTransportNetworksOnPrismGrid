@@ -1,0 +1,8 @@
+types               { 100 101 102 103 }  
+
+dc_minus_start        1.0
+dc_minus_stepfactor   2.0
+dc_minus_steps        10
+
+start_depth           2
+stop_depth            10

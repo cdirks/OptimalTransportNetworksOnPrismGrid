@@ -1,0 +1,8 @@
+/** \namespace om
+ *  \brief Triangulated surfaces.
+ *  See Module Documentation \ref openmeshdoc.
+ */
+
+//! @dir
+//! @brief Triangulated surfaces.
+//! See Module Documentation @ref openmeshdoc.

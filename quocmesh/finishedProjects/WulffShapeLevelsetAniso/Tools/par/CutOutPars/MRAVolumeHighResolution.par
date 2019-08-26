@@ -1,0 +1,45 @@
+# this program saves a cutout from a quocmesh 3d data set
+# in another scalarArray3d.
+
+# the level of the destination scalarArray:
+destLevel 8
+
+# the size of the cutout of the data
+SourceSizeX 257
+SourceSizeY 257
+SourceSizeZ 257
+
+# the position of the cutout in the source-array
+SourceOffsetX 140
+SourceOffsetY 150
+SourceOffsetZ 175
+
+# the position of the cutout in the destination-array
+DestOffsetX 0
+DestOffsetY 0
+DestOffsetZ 0
+
+# add an offset to the scalarArray (e.g. to get a 0-isosurface)
+offset 0
+
+# do a thresholding? (yes = 1, no = 0)
+doThreshold 1
+# if yes then set the threshold itself (copy data in [thrLower, thrUpper])
+thresholdLower 70
+thresholdUpper 255
+
+# saveOnly01 means no grey values, but only 0 or 1 is stored
+saveOnly01 1
+
+# scaleTo0_1 means the grey values are scaled to the interval [0,1]
+scaleTo0_1 1
+
+# filenames
+loadName ../Data/MRAVolume/MRA_150.bz2
+saveName ../Data/MRAVolume/MRACutOutThr70_Scale01.bz2
+
+#loadName ../Data/MoreDicomTests/Patient1_MR/patient1ref.raw
+#saveName ../Data/MoreDicomTests/Patient1_MR/patient1refCutOut.bz2
+
+#loadName ../Data/MoreDicomTests/Patient1_MR/patient1_mr.raw
+#saveName ../Data/MoreDicomTests/Patient1_MR/patient1_mrCutOut.bz2

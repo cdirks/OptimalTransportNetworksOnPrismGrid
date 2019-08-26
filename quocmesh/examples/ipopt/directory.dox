@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief Ipopt example
+//!
+//! Example of a nonlinear Optimization problem (NLP) solved by Ipopt.
+//! For further information see the official
+//! <a href="http://www.coin-or.org/Ipopt/documentation/node31.html">documentation</a>.
+//!
+//! @author Geihe

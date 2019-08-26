@@ -1,0 +1,8 @@
+//! @dir
+//!
+//! @brief set of different tools for image manipulation
+//!
+//! Benefit of each file can be concluded from its name.
+//! Usage is demonstrated when executing the file without any arguments.
+//!
+//! @author Berkels, Schwen et al.

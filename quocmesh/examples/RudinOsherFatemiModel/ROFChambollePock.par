@@ -1,0 +1,8 @@
+input-image ../testdata/image_129.pgm.bz2
+
+saveDirectory   output/
+
+# gamma weights the perimiter length term
+gamma           0.004
+
+numSteps        1000

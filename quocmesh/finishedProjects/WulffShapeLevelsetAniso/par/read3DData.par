@@ -1,0 +1,51 @@
+# ------------------- file-stuff -------------------------------------
+
+#loadName Data/TolgaDataKlein/vesselsradius
+#saveBlockName Data/TolgaDataKlein/vesselsradius64.bz2
+
+#loadName /home/NOSAVE/achill/nemitz/Tolga/imagez60y384x512.short
+#saveBlockName /home/NOSAVE/achill/nemitz/Tolga/TestBlockOrig64.bz2
+
+#loadName /home/numerik/nemitz/imagez60y384x512.short
+#saveBlockName /home/numerik/nemitz/TestBlockOrig512.bz2
+
+#loadName /home/NOSAVE/achill/nemitz/Tolga/vesselmask_dilate5.raw
+#saveBlockName /home/NOSAVE/achill/nemitz/Tolga/vesselMask512.bz2
+
+loadName Data/TolgaData128/vesselmask_dilate5.raw
+saveBlockName Data/TolgaData128/vesselmvesselmask.bz2
+
+# -------------------- parameter -------------------------------------
+
+# extract pics (1) or one 3d-block (2)
+# pics will only be extracted in the entire size
+mode 2
+# make a threshold (1) or not (0)
+threshold 0
+
+# dimension of the 3d-data
+#dimX 65
+#dimY 65
+#dimZ 65
+dimX 512
+dimY 384
+dimZ 60
+
+# information about the block that has to be extracted
+# width, height and depth of the block 
+# this has to be 2^n, NOT 2^n+1
+BDim 64
+
+# left uppder edge
+#StartX 0
+#StartY 0
+#StartZ 0
+StartX 0
+StartY 0
+StartZ 0          # only for 32x32x32-blocks
+
+# this is the startpoint for the big block
+#StartX 90
+#StartY 190
+
+ 

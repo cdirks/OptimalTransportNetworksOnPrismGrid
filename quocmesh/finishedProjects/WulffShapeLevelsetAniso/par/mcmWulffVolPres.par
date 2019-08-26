@@ -1,0 +1,93 @@
+# time-dependend stuff
+
+tau         0.002
+timesteps   10001
+
+# save every "timeOffset" timestep
+timeOffset  500
+
+# do a redistancing?
+doRedist 0
+redistOffset 5
+
+lambda 2.5
+
+#image Data/MRAVolume/MRACutOutThr70_SmallCutOut7.bz2
+#saveName Data/MRAVolume/SmallMRACutOutThr70NoBdInt_GlobVP
+
+image Data/Wulffshapes/SameNormRotatedHexagonTau002_5000L7.bz2
+#Sphere/SphereOrig7.bz2
+saveName Data/Wulffshapes/RotatedHexagonL7_tau002
+#image Data/Wulffshapes/BlendingHexDC_Eta05_10000.bz2
+#saveName Data/Wulffshapes/BlendHexDC_P10000_Eta05
+
+#image Data/Tests/NoisyHexagon.bz2
+#noiseHexagon.bz2
+#saveName Data/Tests/noiseHexagonMCMStartMCMHexagon
+
+
+#image Data/Ellipsoid/SmallerEllipsoidVolPres6Teil2_3800.bz2
+#Ellipsoid6SD.bz2
+#saveName Data/Ellipsoid/SmallerEllipsoidVolPres6Teil3
+
+#image Data/Ellipsoid/Ellipsoid6SD.bz2
+#saveName Data/Ellipsoid/WSVolPres_Ellipsoid6SD.bz2
+
+#image Data/Tests/NeuPentagon_Tau001_4000.bz2
+#saveName Data/Tests/NeuPentagon_Tau001_Teil2
+
+
+#image Data/Sphere/SphereOrig6.bz2
+#saveName Data/Tests/Hexagon_Abs_002_Rad001_Tau01
+
+
+#image Data/Block/NoisyBlock6Smoothed.bz2
+#saveName Data/Block/BlockLpSmoothed
+
+#image Data/Cube/Cube2LongEllipsoid_2000.bz2
+#saveName Data/Cube/Cube2LongEllipsoid2
+
+#image Data/2Balls/2Balls5Smooth.bz2
+#saveName Data/2Balls/VolPres2Balls2Ellipsoids
+
+#image Data/Tests/xAxisLine5Smooth.bz2
+#saveName Data/Tests/GlobVPLambda0xAxisLine.bz2
+
+#image Data/2Cigars/2Cigar5Smooth.bz2
+#saveName Data/2Cigars/GlobVolPres2CigarsNotSoLargeEllipsoid
+
+#image Data/Block/SmoothBlockOrig6.bz2
+#saveName Data/Block/BlockWSVolPres6
+
+#image Data/Cube/CubeOrig6.bz2
+#saveName Data/Cube/cubeWSVolPres6
+
+#image Data/Torus5/NoisyTorusOrig5.bz2
+#saveName Data/Torus5/NoisyTorusEllipsoidTest
+
+#image Data/TubeDiag/TDiagOrig5.bz2
+#saveName Data/TubeDiag/VolPresWS5
+
+#image Data/Cube/Noisy5Cube.bz2
+#saveName Data/Cube/NoisyCubeEllipsoidTest
+
+#image Data/Tube/TubeOrig5.bz2
+#saveName Data/Tube/TubeDiagTest
+
+
+#image Data/Sphere/TIMESTEP05Sphere2PNorm_600.bz2 #SphereShifted5.bz2
+#saveName Data/Sphere/TIMESTEP05Sphere2PNorm_2
+
+
+
+#image Data/HorizLine/HLOrig5.bz2
+#saveName Data/HorizLine/HLWulff
+
+#image Data/Block/BlockOrig.bz2
+#saveName Data/Block/BlockWSEllipsoid
+
+#image  Data/Diagonale/NoisyDiag5Smooth.bz2  #NoisyDiagOrig5.bz2
+#saveName Data/Diagonale/NoisyDiagTest
+
+#image Data/Ark/NoisyArkOrig5.bz2
+#saveName Data/Ark/Ark5Fw10_fixDirection

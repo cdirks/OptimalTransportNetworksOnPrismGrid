@@ -1,0 +1,5 @@
+//! @dir
+//!
+//! @brief Implementation of "Joint ToF image denoising and registration with a CT surface in radiation therapy" - http://dx.doi.org/10.1007/978-3-642-24785-9_9
+//!
+//! @author Bauer

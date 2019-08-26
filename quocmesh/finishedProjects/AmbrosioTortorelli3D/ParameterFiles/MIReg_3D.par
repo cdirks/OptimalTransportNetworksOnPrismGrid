@@ -1,0 +1,31 @@
+#reference  ../../../input/3D/cg_ct.raw
+#template   ../../../input/3D/cg_pet_rigid_mirada.raw
+#reference  ../../../input/3D/Jasmin_1
+#template   ../../../input/3D/Jasmin_2
+#reference  ../../../input/3D/3b_7/4bb_undeformed_domain.dat.bz2
+#template   ../../../input/3D/3b_7/4bb_deformed_domain.dat.bz2
+#reference  ../../../input/3D/mrhead.raw
+#template   ../../../input/3D/cthead.raw
+reference  ../../../input/3D/mri257_patient1.raw
+template   ../../../input/3D/mri257_patient2.raw
+
+saveDirectory res_MI/
+
+epsilonFactor 0.5
+
+
+
+alpha          1.0
+beta           2550.0
+
+lambda         1.0
+beta_hist      1.0
+numberOfIntensityLevels 6
+ 
+
+startLevel 3
+stopLevel 8
+precisionLevel 8
+
+checkboxWidth 32
+

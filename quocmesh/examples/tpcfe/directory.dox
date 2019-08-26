@@ -1,0 +1,10 @@
+//! @dir
+//!
+//! @brief Usage of tpcfe methods
+//!
+//! Examples for using the tpcfe module.
+//! It can be misused for affine FE calculations using a simple complicated domain.
+//! Moreover, an example for periodic boundary conditions for complicated domains is given.
+//!
+//! @author Schwen
+

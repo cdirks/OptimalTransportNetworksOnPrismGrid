@@ -1,0 +1,9 @@
+//! @dir
+//! 
+//! @brief Executables to load and visualize different types of QuocMesh files in GRAPE.
+//!
+//! The most generic executables are scalar1d.cpp, scalar2d.cpp and scalar3d.cpp to load one scalar function with a 1, 2 or 3-dimensional domain, vector2d.cpp and vector3d.cpp to load a vector-valued function
+//! (by giving the components separately as scalar functions) and sequence2d.cpp as well as sequence3d.cpp to load a sequence of scalar functions (in the order in which the arguments are specified) 
+//! as different timesteps into the same instance. More details can be found in the description of the individual files.
+//!
+//! @author Nemitz, Lenz, Franken, Wirth

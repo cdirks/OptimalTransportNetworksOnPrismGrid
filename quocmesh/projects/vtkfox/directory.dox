@@ -1,0 +1,7 @@
+//! @dir
+//!
+//! @brief visualization using VTK
+//!
+//! Interactive visualization using VTK and the fox toolkit for a GUI.
+//!
+//! @author Berkels, Schwen

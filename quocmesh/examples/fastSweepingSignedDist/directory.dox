@@ -1,0 +1,6 @@
+//! @dir
+//!
+//! @brief 3D Implementation of {A fast sweeping method for Eikonal equations} by Hongkai Zhao, seems to be much faster than qc::SignedDistanceSweepingOp3D
+//!
+//! @author Paul Springer (AICES)
+

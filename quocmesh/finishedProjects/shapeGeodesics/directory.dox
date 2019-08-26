@@ -1,0 +1,16 @@
+//! @dir
+//!
+//! @brief Tool to compute geodesic paths between two shapes, based on viscous dissipation.
+//!
+//! "shapeGeodesics.cpp" has to be called together with a parameter file to
+//! compute a geodesic path between two shapes.
+//! The approach is based on a level set description of shapes and
+//! is described in the following articles:
+//! [1] B. Wirth, L. Bar, M. Rumpf, and G. Sapiro. Geodesics in shape space via variational time discretization.
+//!     In Proceedings of EMMCVPR'09, volume 5681 of LNCS, pages 288-302, 2009.
+//! [2] B. Wirth, L. Bar, M. Rumpf, and G. Sapiro. A continuum mechanical approach to geodesics in shape space.
+//!     submitted to IJCV, 2010. [ bib | .pdf ]
+//! [3] M. Rumpf and B. Wirth. Variational methods in shape analysis.
+//!     In Handbook of Mathematical Methods in Imaging. Springer, accepted, 2010.
+//!
+//! @author Wirth

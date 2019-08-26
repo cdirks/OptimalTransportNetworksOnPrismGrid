@@ -1,0 +1,18 @@
+//! @dir
+//!
+//! @brief Tool to compute the average and the dominant modes of variation of a number of shapes.
+//!
+//! "averagePhaseField.cpp" has to be called together with a parameter file to
+//! compute an average shape or dominant modes of variation in different steps.
+//! The approach is based on an Ambrosio-Tortorelli description of shapes and
+//! is described in the following articles:
+//! [1] M. Rumpf and B. Wirth. A nonlinear elastic shape averaging approach.
+//!     SIAM Journal on Imaging Sciences, 2(3):800-833, 2009.
+//! [2] M. Rumpf and B. Wirth. An elasticity approach to principal modes of shape variation.
+//!     In Proceedings of the SSVM 2009, volume 5567 of Lecture Notes in Computer Science, pages 709-720, 2009.
+//! [3] M. Rumpf and B. Wirth. An elasticity-based covariance analysis of shapes.
+//!     International Journal of Computer Vision, 2010. accepted.
+//! [4] M. Rumpf and B. Wirth. Variational methods in shape analysis.
+//!     In Handbook of Mathematical Methods in Imaging. Springer, accepted, 2010.
+//!
+//! @author Wirth

@@ -1,0 +1,31 @@
+#image
+#reference       ../../../input/2D/canonbilder.pgm
+#reference       ../../../input/2D/t2.pgm
+#reference       ../../../input/2D/square.pgm
+#reference       ../../../input/2D/oldbuild3.pgm
+#reference       ../../../input/2D/oldbuild3_noise.pgm
+#reference       ../../../input/2D/pet.pgm
+#reference       ../../../input/2D/lena.pgm
+#reference       ../../../input/2D/lena_noise.pgm
+#reference       ../../../input/2D/t1extr_noise.pgm
+#reference       ../../../input/2D/t2extrmoved.pgm
+#reference        ../../../input/2D/cortex_square_3d.pgm
+#reference        ../../../input/2D/cortex_square_pic.pgm 
+#reference       ../../../input/2D/lenaMotionBlur10-10.dat.bz2
+#reference       ../../../input/2D/lena.pgmMotionBlur10.0-10.0.dat.bz2
+#reference       ../../../input/2D/board65MotionBlur10-10.dat.bz2
+reference       ../../../input/2D/board65.pgmMotionBlur10.0-10.0.dat.bz2
+#parameters
+epsilon        0.00195313
+alpha          1.0
+beta           25500000.0
+
+presmooth 0
+presmoothFactor 0
+epsilonFactor 1.28
+# this will make epsilon = 0.005 on level 8
+#epsilonFactor 2.56
+# this will make epsilon = 0.01 on level 8
+startLevel 5
+stopLevel 6
+highestLevel 6

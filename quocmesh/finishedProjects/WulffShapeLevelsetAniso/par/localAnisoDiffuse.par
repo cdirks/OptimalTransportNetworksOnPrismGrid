@@ -1,0 +1,83 @@
+# bool: use calculated radii or not?
+UseRadii 1
+
+# factor for the radii
+radiusFactor 6
+
+# regularization
+delta  0.5
+# filter-width
+epsilon 7
+
+# barrier for linear structure recognization
+barrier 0.5
+
+# bool: load the moments? Otherwise calc them!
+load 0
+
+# file-stuff
+
+image Data/MRAVolume/SmallCutThr70_L10_Only01.bz2
+RadiiName Data/MRAVolume/SmallCutThr70_Radii.bz2
+saveMomentsName Data/MRAVolume/SmallCutThr70_Moments
+loadMomentsName Data/MRAVolume/SmallCutThr70_Moments
+saveAxisName Data/MRAVolume/SmallCutThr70_Axis
+
+#image Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65.bz2
+#RadiiName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65Radii.bz2
+#saveMomentsName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Moments
+#loadMomentsName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Moments
+#saveAxisName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Axis
+
+#image Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95.bz2
+#RadiiName  Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95Radii.bz2
+#saveMomentsName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_Moments
+#loadMomentsName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_Moments
+#saveAxisName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_Axis
+
+#image Data/MoreDicomTests/Patient4_MR/Patient4_257_Thr65.bz2
+#RadiiName Data/MoreDicomTests/Patient4_MR/Patient4_257_Thr65_Radii.bz2
+#saveMomentsName Data/MoreDicomTests/Patient4_MR/Patient4_257_Thr65_Moments
+#loadMomentsName Data/MoreDicomTests/Patient4_MR/Patient4_257_Thr65_Moments
+#saveAxisName Data/MoreDicomTests/Patient4_MR/Patient4_257_Thr65_Axis
+
+#image Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55.bz2
+#RadiiName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55Radii.bz2
+#saveMomentsName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55_Moments
+#loadMomentsName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55_Moments
+#saveAxisName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_75z_Thr55_Axis
+
+#image Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55.bz2
+#RadiiName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55Radii.bz2
+#saveMomentsName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55_Moments
+#loadMomentsName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55_Moments
+#saveAxisName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55_Axis
+
+#image Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_01Only.bz2
+#RadiiName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_Radii.bz2
+#saveMomentsName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_Moments
+#loadMomentsName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_Moments
+#saveAxisName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_Axis
+
+#image Data/MRAVolume/MRACutOutThr60/MRACutOutThr60_01.bz2
+#RadiiName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60_01_Radii.bz2
+#saveMomentsName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60_01_Moments
+#loadMomentsName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60_01_Moments
+#saveAxisName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60_01_Axis
+
+
+#image Data/Dicom257/TolgaCutOutThr100.bz2
+#RadiiName Data/Dicom257/TolgaCutOutThr100RadiiNeu.bz2
+#saveMomentsName Data/Dicom257/TolgaCutOutThr100Moments
+#loadMomentsName Data/Dicom257/TolgaCutOutThr100Moments
+#saveAxisName Data/Dicom257/TolgaCutOutThr100Axis
+
+#image Data/MRAVolume/MRA_LowRes_CutOutThr75.bz2
+#RadiiName Data/MRAVolume/MRA_LowRes_CutOutThr75_Radii.bz2
+#saveMomentsName Data/MRAVolume/MRA_LowRes_CutOutThr75Moments
+#loadMomentsName Data/MRAVolume/MRA_LowRes_CutOutThr75Moments
+#saveAxisName Data/MRAVolume/MRA_LowRes_CutOutThr75Axis
+
+
+
+

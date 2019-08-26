@@ -1,0 +1,19 @@
+
+
+Image0 ../../../input/2D/yos/yos_img_00.pgm
+Image1 ../../../input/2D/yos/yos_img_01.pgm
+Image2 ../../../input/2D/yos/yos_img_02.pgm
+Image3 ../../../input/2D/yos/yos_img_03.pgm 
+Image4 ../../../input/2D/yos/yos_img_04.pgm
+Image5 ../../../input/2D/yos/yos_img_05.pgm
+Image6 ../../../input/2D/yos/yos_img_06.pgm
+Image7 ../../../input/2D/yos/yos_img_07.pgm
+
+saveDirectory results/
+
+
+stopLevel 8
+precisionLevel 8
+dataLevel 8
+
+

@@ -1,0 +1,265 @@
+Compile time (makefile.selection.default):
+
+gcc version 4.3.0 (GCC)
+real    101m46.634s
+user    93m24.518s
+sys     5m42.005s
+
+gcc version 4.5.0 (GCC)
+5508.61user 332.60system 1:39:57elapsed 97%CPU (0avgtext+0avgdata 0maxresident)k
+741776inputs+1979824outputs (1major+55168901minor)pagefaults 0swaps
+
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.3.0
+Date and time          : Mon May 10 14:27:03 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin
+ -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering
+ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      181 |      181
+tools/benchmark/benchmarkHeat3d                           |      255 |      255
+tools/benchmark/sparsebench                               |      139 |      139
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.3.0
+Date and time          : Mon May 10 14:59:12 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -DDO_NOT_USE_VECTORMANAGER -fopenmp -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/
+ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics
+ -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      139 |      224
+tools/benchmark/benchmarkHeat3d                           |      150 |      256
+tools/benchmark/sparsebench                               |      126 |      135
+
+
+ 
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Mon May 10 15:30:22 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin
+ -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering
+ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      194 |      194
+tools/benchmark/benchmarkHeat3d                           |      267 |      267
+tools/benchmark/sparsebench                               |      168 |      168
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Mon May 10 16:08:12 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -DDO_NOT_USE_VECTORMANAGER -fopenmp -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/
+ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics
+ -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      143 |      230
+tools/benchmark/benchmarkHeat3d                           |      130 |      256
+tools/benchmark/sparsebench                               |      151 |      168
+
+
+
+-flto
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Mon May 10 16:50:53 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -flto -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/ -I/home/prog/hypre-64/include
+ -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics -I/home/prog/vtk-64/include/vtk-5.2/IO
+ -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT
+ -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      126 |      126
+tools/benchmark/benchmarkHeat3d                           |      252 |      252
+tools/benchmark/sparsebench                               |       64 |       64
+
+
+Cloog stuff
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Mon May 10 18:58:51 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -floop-interchange -floop-strip-mine -floop-block -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1
+ -I/home/prog/grape-64/ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering
+ -I/home/prog/vtk-64/include/vtk-5.2/Graphics -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE
+ -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      195 |      195
+tools/benchmark/benchmarkHeat3d                           |      240 |      240
+tools/benchmark/sparsebench                               |      168 |      168
+
+
+
+
+-ftree-parallelize-loops=, -floop-parallelize-all
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.083
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Mon May 10 19:30:41 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -floop-parallelize-all -ftree-parallelize-loops=2 -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/
+ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics
+ -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE
+ -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      244 |      244
+tools/benchmark/benchmarkHeat3d                           |      241 |      241
+tools/benchmark/sparsebench                               |      168 |      168
+
+
+Cloog + parallelize
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name          : tohil
+CPU model              : Intel(R) Pentium(R) 4 CPU 3.60GHz
+Clock speed in MHz     : 2 x 3591.085
+Number of cores        : 2
+Max. number of threads : unlimited
+Main memory in kB      : 3985404
+Compiler version       : g++ (GCC) 4.5.0
+Date and time          : Tue May 11 14:01:09 CEST 2010
+Quocmesh revision      : 25723
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/bem
+ -I./modules/quoc -I./external/ahmed -I./external/cholmod -I./external/fox -I./external/grape -I./external/hypre -I./external/ipopt
+ -I./external/vtk -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall -Wextra
+ -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops -msse2
+ -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW
+ -floop-interchange -floop-strip-mine -floop-block -floop-parallelize-all -ftree-parallelize-loops=2 -I/home/prog/ahmed-64/include -I/usr/include/suitesparse/
+ -I/home/prog/fox-toolkit-64/include/fox-1.6 -DHAVE_GL_H=1 -I/home/prog/grape-64/ -I/home/prog/hypre-64/include -I/home/prog/ipopt-64/include/coin -I/home/prog/vtk-64/include/vtk-5.2 -I/home/prog/vtk-64/include/vtk-5.2/Rendering
+ -I/home/prog/vtk-64/include/vtk-5.2/Common -I/home/prog/vtk-64/include/vtk-5.2/Filtering -I/home/prog/vtk-64/include/vtk-5.2/Graphics -I/home/prog/vtk-64/include/vtk-5.2/IO -I/home/prog/vtk-64/include/vtk-5.2/VolumeRendering -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_CHOLMOD
+ -DUSE_EXTERNAL_FOX -DUSE_EXTERNAL_GRAPE -DUSE_EXTERNAL_HYPRE -DUSE_EXTERNAL_IPOPT -DUSE_EXTERNAL_VTK
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      243 |      243
+tools/benchmark/benchmarkHeat3d                           |      240 |      240
+tools/benchmark/sparsebench                               |      168 |      168

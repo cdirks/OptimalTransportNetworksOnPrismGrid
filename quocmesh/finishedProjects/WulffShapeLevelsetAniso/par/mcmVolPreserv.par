@@ -1,0 +1,34 @@
+# time-dependend stuff
+
+tau         0.5
+timesteps   101
+
+# save every "timeOffset" timestep
+timeOffset  5
+
+# file stuff
+
+#image Data/SimpleArk/SmoothedSimpleArkOrig5.bz2
+#saveName Data/SimpleArk/mcmVolPresSimpleArk
+
+image Data/Block/NoisyBlock5SD.bz2    #SmoothBlockOrig5.bz2
+saveName Data/Block/NoisyBlockMCM5
+
+#image Data/Diagonale/NoisyDiagOrig5.bz2
+#saveName Data/Diagonale/DiagMCMVolPres
+
+#image Data/Ark/ArkSpots5Orig.bz2
+#saveName Data/Ark/ArkMCMVolPres
+
+#image Data/Tube/NoisyTubeOrig5.bz2
+#saveName Data/Tube/TubeMCMVolPres
+
+#image Data/Cube/CubeOrig6.bz2
+#saveName Data/Cube/cubeMCMVolPres
+
+#image Data/Sphere/SphereOrig5.bz2
+#saveName Data/Sphere/sphereMCMVolPres
+
+#image Data/Ellipsoid/Ellipsoid6SD.bz2
+#saveName Data/Ellipsoid/JustATest
+#MCMEllipsoid6SD.bz2

@@ -1,0 +1,89 @@
+# time-dependend stuff
+
+tau         0.05
+timesteps   10
+
+# bool, whether smoothed data should be rescaled to [0,1]
+rescale01 0
+rescaleMinus1_1 0
+
+# bool, whether a constant should be added to the data or not
+addConstant 0
+Constant -0.4
+
+# file stuff
+
+loadName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60.bz2
+saveName Data/MRAVolume/MRACutOutThr60/MRACutOutThr60Smooth.bz2
+
+loadName Data/Dicom257/DBlock257Thr100DeletedBlock.bz2
+saveName Data/Dicom257/DBlock257Thr100DeletedBlockSmooth.bz2
+
+#loadName Data/Bifurcations/Bifurcation3/Bifurcation3_6WH.bz2
+#saveName Data/Bifurcations/Bifurcation3/Bifurcation3_6WHSmooth.bz2
+
+#loadName Data/Helix/Helix6Noisy.bz2
+#saveName Data/Helix/Helix6NoisySmooth.bz2
+
+#loadName Dicom/DicomBlock129Thr100.bz2
+#saveName Dicom/DicomBlock129Thr100SmoothOTF.bz2
+
+#loadName Data/Ball/TestBall6.bz2
+#saveName Data/Ball/TestBallSmooth6.bz2
+
+#loadName Data/Block/NoisyBlock6.bz2
+#saveName Data/Block/NoisyBlock6Smoothed.bz2
+
+#loadName Data/TolgaData128/TestBlockOrig128.bz2
+#saveName Data/TolgaData128/SmoothedTestBlockOrig128.bz2
+
+#loadName Data/Ball/LittleBall5.bz2
+#saveName Data/Ball/LittleSmoothBall5.bz2
+
+#loadName Data/Block/SmallBlock5.bz2
+#saveName Data/Block/SmoothSmallBlock5.bz2
+
+#loadName Data/CurvedJunction/CurvedJunctionOrig6.bz2
+#saveName Data/CurvedJunction/SmoothedCurvedJunctionOrig6.bz2
+
+#loadName Data/Tests/OneBall6.bz2
+#saveName Data/Tests/SmoothOneBall6.bz2
+
+#loadName Data/VolumeTestTorus/TestTorusSignedDistance5.bz2
+#saveName Data/VolumeTestTorus/SmoothedTorus5.bz2
+
+#loadName Data/Ball/NoisyBall5.bz2
+#saveName Data/Ball/Ball5Smooth.bz2
+
+#loadName Data/2Balls/2Balls5.bz2
+#saveName Data/2Balls/2Balls5Smooth.bz2
+
+#loadName Data/Tests/xAxisPiece5Orig.bz2
+#saveName Data/Tests/xAxisPiece5Smooth.bz2
+
+#loadName Data/TolgaDataKlein/TestBlockOrig64.bz2
+#saveName Data/TolgaDataKlein/TestBlockOrig64Smooth.bz2
+
+#loadName Data/2Cigars/2CigarRad3Orig.bz2
+#saveName Data/2Cigars/2Cigar5Rad3Smooth.bz2
+
+#loadName Data/StraitJunction/NoisyStraitJunctionOrig6.bz2
+#saveName Data/StraitJunction/SmoothStraitJunctionOrig6.bz2
+
+#loadName Data/TolgaDataKlein/vesselsradius.pgm.bz2
+#saveName Data/TolgaDataKlein/vesselsradiusSmooth.pgm
+
+#loadName Data/SimpleTorus/SimpleTorusOrig6.bz2
+#saveName Data/SimpleTorus/SmoothedSimpleTorusOrig6.bz2
+
+#loadName Data/SimpleArk/SimpleArkOrig6.bz2
+#saveName Data/SimpleArk/SmoothedSimpleArkOrig6.bz2
+
+#loadName Data/Diagonale/DiagOrig5.bz2
+#saveName Data/Diagonale/NoisyDiag5Smooth.bz2
+
+#loadName Data/Ark/NoisyArkOrig5.bz2
+#saveName Data/Ark/NoisyArk5Smooth.bz2
+
+#loadName Data/Block/BlockOrig6.bz2
+#saveName Data/Block/SmoothBlockOrig6.bz2

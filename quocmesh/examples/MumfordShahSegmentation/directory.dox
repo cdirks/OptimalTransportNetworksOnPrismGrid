@@ -1,0 +1,7 @@
+//! @dir
+//!
+//! @brief Segmentation of an image into piecewise constant regions with a Mumford Shah model.
+//!
+//! (missing)
+//!
+//! @author Berkels

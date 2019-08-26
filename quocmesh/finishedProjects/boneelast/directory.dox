@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief elasticity simulations for trabecular microstructures
+//!
+//! Application of Composite Finite Elements to artificial structures
+//! and scans of Al foams and trabecular bone viewed as complicated domains
+//! or interfaces between domains with different coefficients.
+//! 
+//! @author Schwen

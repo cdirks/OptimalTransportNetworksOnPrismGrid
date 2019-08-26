@@ -1,0 +1,9 @@
+/**
+ * \dir
+ *
+ * \brief Shows how to solve the discrete heat equation with Finite Elements using assembled
+ *        and on-the-fly operators. Furthermore, shows how to solve the continuous heat equation
+ *        using convolution.
+ *
+ * \author Berkels
+ */

@@ -1,0 +1,5 @@
+PointCloudDataFile			D:/Office/2011/2011_Bonn/Data/Synthetic/NCAT/ct_512x512_act_1_seg_laplace_50.vtk_OS_129x129.bin
+PLYMeshFile					D:/Office/2011/2011_Bonn/Data/Synthetic/NCAT/ct_512x512_act_1_seg_laplace_50.vtk_OS_129x129.ply
+VTKMeshFile					D:/Office/2011/2011_Bonn/Data/Synthetic/NCAT/ct_512x512_act_1_seg_laplace_50.vtk_OS_129x129.vtk
+
+CloseSurface 0

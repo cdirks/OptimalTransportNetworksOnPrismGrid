@@ -1,0 +1,51 @@
+atree_file		trees/a_28_1024_s.tree
+vtree_file		trees/v_28_1024_s.tree
+
+tree_files		output_bgpv_we/profile_%05d.eps
+tiss_files		output_bgpv_we/temperatures_%05d.pgm
+tiss_c_files		output_bgpv_we/temperatures_%05d.ppm
+
+data_files		output_bgpv_we/data_%05d.dat
+
+num_timesteps		20000
+save_every		20
+	
+xang_deg		30.0
+yang_deg		0.0
+zang_deg		0.0
+zzoom			0.15
+color_scale		1.0
+
+topview			1
+
+cg_epsilon		1e-16
+max_cg_iter		200
+solverquiet		1
+
+leveltissue		7
+levelvessels		9
+
+# color scaling, inverse fraction of half spectrum used.
+colorscalefactor	70.0
+
+# heat conduction coefficient in tissue
+kappa 			0.00142857
+
+rad_adaption		2000.0
+
+init_tissue_temp	0.0
+init_vessel_temp	0.0
+plot_ctr_temp		0.0125
+inflow_pulse		1
+inflow_temp		0.0
+
+# kappa_trans
+perc			0.0005
+C_tis			1.0
+C_ves			1.0
+
+probe_present		0
+spos_x			0.2
+spos_y			0.4
+s_sigma			0.1
+s_value			0.6

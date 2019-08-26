@@ -1,0 +1,181 @@
+\documentclass[fleqn,bibtotoc,idxtotoc]{scrartcl}
+  % fleqn macht Gleichungen linksbndig, statt zentriert
+  % titelpage stellt die Titelseite zur Verfgung
+\usepackage{a4wide}
+  % Sorgt fr bessere Ausnutzung des A4 Formats
+\usepackage{amssymb,amsmath}
+  % Stellt alle wichtigen mathematischen Zeichen, Umgebungen zur Verfgung
+\allowdisplaybreaks[3]
+\usepackage{german}
+  % Sorgt fr deutsche Regionaluntersttzung
+\usepackage{graphicx}
+  % Erm�licht das Einbinden von Grafiken
+\usepackage[ansinew]{inputenc}
+  % Erm�licht das direkte Eingeben von Umlauten im Quelltext
+\usepackage{multicol}
+  % Erm�licht das Benutzen der "multicols" Umgebung, d.h. mehrspaltige Umgebungen
+\usepackage{amsthm}
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{float}
+\restylefloat{figure}
+\usepackage{makeidx}
+
+  % Erm�licht das Benutzten von Makeindex fr die Index Generierung
+%\renewcommand{\sectfont}{\bfseries}
+  % �dert die Schriftart von �erschriften
+%\let\raggedsection\relax
+  % sorgt dafr, das Wort in �erschriften getrennt werden drfen
+\DeclareMathOperator{\meteopar}{\verb"meteo.par"}
+\DeclareMathOperator{\outputdat}{\verb"output.dat"}
+\DeclareMathOperator{\V}{\mathcal{V}}
+\DeclareMathOperator{\W}{\mathcal{W}}
+\DeclareMathOperator{\M}{\mathcal{M}} \DeclareMathOperator{\m}{m}
+\DeclareMathOperator{\identity}{1\!\!1}
+\providecommand{\T}{\mathcal{T}} \providecommand{\RAT}{\mathcal{S}}
+\providecommand{\Tc}{\widetilde{\mathcal{T}}}
+\providecommand{\Tt}{\widetilde{T}}
+\providecommand{\deltaT}{\vartheta} \providecommand{\deltaT}{\delta
+T} \DeclareMathOperator{\vectorone}{\underline{1}}
+\DeclareMathOperator{\X}{\mathbf{X}}
+\DeclareMathOperator{\B}{\mathbf{B}}
+\DeclareMathOperator{\F}{\mathbf{F}}
+\DeclareMathOperator{\Vvec}{\mathbf{V}}
+\DeclareMathOperator{\G}{\mathbf{G}} \DeclareMathOperator{\Fix}{Fix}
+\DeclareMathOperator{\inv}{inv} \DeclareMathOperator{\id}{id}
+\DeclareMathOperator{\sgn}{sgn} \DeclareMathOperator{\re}{Re}
+\DeclareMathOperator{\im}{Im} \DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\grad}{grad} \DeclareMathOperator{\Quot}{Quot}
+\DeclareMathOperator{\Zfk}{Zfk} \DeclareMathOperator{\Char}{char}
+\DeclareMathOperator{\diag}{diag} \DeclareMathOperator{\rk}{rk}
+\DeclareMathOperator{\tr}{tr} \DeclareMathOperator{\area}{area}
+\DeclareMathOperator{\TB}{\mathit{T_b}}
+\DeclareMathOperator{\TBM}{\mathit{T_{bm}}}
+\DeclareMathOperator{\dx}{d\textit{x}}
+\DeclareMathOperator{\osubset}{\overset{_\circ}{\subset}}
+\DeclareMathOperator*{\ForallMath}{\forall}
+\providecommand{\Forall}[1]{\ForallMath_{#1}\quad}
+\DeclareMathOperator*{\ExistsMath}{\exists}
+\providecommand{\Exists}[1]{\ExistsMath_{#1}\quad}
+\DeclareMathOperator*{\Leq}{\leq} \DeclareMathOperator*{\Geq}{\geq}
+\DeclareMathOperator*{\Eq}{=}
+\DeclareMathOperator*{\lRightarrow}{\Rightarrow}
+\DeclareMathOperator*{\llongrightarrow}{\longrightarrow}
+\providecommand{\abs}[1]{\left\lvert#1\right\rvert}
+\providecommand{\Abs}[1]{\left\lVert#1\right\rVert}
+\providecommand{\normed}[1]{\frac{#1}{\Abs{#1}}}
+\providecommand{\brac}[1]{\left(#1\right)}
+\providecommand{\var}[1]{\left<#1\right>}
+\providecommand{\lit}[2]{(vgl. Lit. \cite{#2})}
+\providecommand{\Lit}[3]{(vgl. Lit. \cite{#2}, #3)}
+\providecommand{\grap}[1]{\includegraphics{images/#1.tif}}
+\providecommand{\graph}[1]{\[\grap{#1}\]}
+\providecommand{\Graph}[2]{\[\grap{#1}\qquad\qquad\grap{#2}\]}
+\providecommand{\GGraph}[3]{\[\grap{#1}\qquad\grap{#2}\qquad\grap{#3}\]}
+\providecommand{\comment}[1]{{\bf [KOMMENTAR: {#1}]}}
+\providecommand{\smallfrac}[2]{\textstyle{\frac{#1}{#2}}}
+
+\newcommand{\missing}[1]{{\bf missing:}{#1} {\bf $\bullet$}}
+
+\newcommand{\Ref}[1]{(\ref{#1})}
+\newcommand{\beqn}{\begin{eqnarray}}
+\newcommand{\eeqn}{\end{eqnarray}}
+
+\newcommand{\fig}[2]{
+\begin{figure}[ht]
+\centerline{
+\includegraphics[scale=1]{images/#1.tif}
+} \caption{{\em{#2}}} \label{fig:#1}
+\end{figure}}
+\newcommand{\GNUPlotPSfig}[2]{
+\begin{figure}[ht]
+\centerline{
+\centerline{\includegraphics[height=1\linewidth,angle=270]{images/#1.ps}}
+} \caption{{\em{#2}}} \label{fig:#1}
+\end{figure}}
+\newcommand{\GNUPlotPSfigSmall}[2]{
+\begin{figure}[ht]
+\centerline{
+\centerline{\includegraphics[height=0.5\linewidth,angle=270]{images/#1.ps}}
+} \caption{{\em{#2}}} \label{fig:#1}
+\end{figure}}
+\newcommand{\GNUPlotPSfigTwo}[3]{
+\begin{figure}[ht]
+\label{fig:#1}
+\centerline{\includegraphics[height=1\linewidth,angle=270]{images/#1.ps}}
+\centerline{\includegraphics[height=1\linewidth,angle=270]{images/#2.ps}}
+\caption{{\em{#3}}}
+\end{figure}
+\clearpage}
+\newcommand{\GNUPlotPSfigTwoSmall}[3]{
+\begin{figure}[H]
+\centerline{
+\includegraphics[height=0.5\linewidth,width=0.37\linewidth,angle=270]{images/#1.ps}
+\includegraphics[height=0.5\linewidth,width=0.37\linewidth,angle=270]{images/#2.ps}
+} \caption{{\em{#3}}}
+\end{figure}
+}
+\newcommand{\GNUPlotPSfigTwoSmallLabeled}[4]{
+\begin{figure}[H]
+\centerline{
+\includegraphics[height=0.5\linewidth,width=0.37\linewidth,angle=270]{images/#1.ps}
+\includegraphics[height=0.5\linewidth,width=0.37\linewidth,angle=270]{images/#2.ps}
+} \caption{{\em{#3}}} \label{#4}
+\end{figure}
+}
+\newcommand{\GNUPlotPSfigs}[4]{
+\begin{figure}[ht]
+\centerline{
+\includegraphics[width=0.5\linewidth,angle=0]{images/#2.ps}
+\includegraphics[width=0.5\linewidth,angle=0]{images/#4.ps}
+} \centerline{
+\includegraphics[width=0.5\linewidth,angle=0]{images/#1.ps}
+\includegraphics[width=0.5\linewidth,angle=0]{images/#3.ps}
+}
+%\caption{{\em{#2}}}
+\end{figure}}
+\newcommand{\EPSfigTwoSmallLabeled}[4]{
+\begin{figure}[H]
+\centerline{
+\includegraphics[width=0.5\linewidth]{images/#1.eps}
+\includegraphics[width=0.5\linewidth]{images/#2.eps}
+} \caption{{\em{#3}}} \label{#4}
+\end{figure}
+}
+
+\swapnumbers
+\newtheorem {Thm} {Theorem}[section]
+\renewcommand{\theThm}{\arabic{chapter}.\arabic{section}.\roman{Thm}}
+\newtheorem {Sat} [Thm]{Satz}
+\newtheorem {Kor} [Thm]{Korollar}
+\newtheorem {Lem} [Thm]{Lemma}
+\newtheorem {Hil} [Thm]{Hilfssatz}
+
+\theoremstyle{definition}
+\newtheorem {Def} [Thm]{Definition}
+\newtheorem {Pro} [Thm]{Problem}
+
+\theoremstyle{remark}
+\newtheorem {Bem} [Thm]{Bemerkung}
+\newtheorem {Bsp} [Thm]{Beispiel}
+\newtheorem {Exp} [Thm]{Example}
+
+\newtheorem {Ans} [Thm]{Ansatz}
+\newtheorem {Sch} [Thm]{Scheme}
+
+\newenvironment {Bew} {\noindent {\bfseries Beweis\ }} {\qed\\}
+\makeindex
+\begin{document}
+\setcounter{tocdepth}{2}
+  % Tiefe des Inhaltsverzeichnis einstellen
+\renewcommand{\labelenumi}{(\roman{enumi})}
+  % Nummerierung der 1. Liste auf (i) setzen
+\renewcommand{\labelenumii}{(\arabic{enumii})}
+  % Nummerierung der 2. Liste auf (1) setzen
+%\renewcommand{\thesection}{\S\ \arabic{section}}
+  % Nummerierung der Sections auf  1 setzen
+%\renewcommand{\thesubsection}{(\arabic{section}.\arabic{subsection})}
+  % Nummerierung der Subsections auf (1.1) setzen
+
+\input{HeatEquation}
+\end{document}

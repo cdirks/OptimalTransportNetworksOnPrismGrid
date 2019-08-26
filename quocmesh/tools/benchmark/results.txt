@@ -1,0 +1,45 @@
+GNUOPT Configuration with SSE
+gcc4.2 @ helena (hyperthreading turned off):
+heat: 262.74 nupsi, sparse: 167.735 nupsi
+
+gcc4.2 @ osiris (with parallelization)
+heat: 151.405 nupsi (at 165.3%)
+
+gcc4.2 @ brahma (with parallelization)
+heat: 221.161 nupsi (?)
+
+gcc4.1 @ tefnut: 186.533, 186.384 nupsi
+gcc4.1 @ brahma, 1 job:  120.936, 90.9978 nupsi
+gcc4.1 @ brahma, 4 jobs: 85.6237, 110.856, 106.182, 89.7197 nupsi
+these four jobs were run at the same time.
+gcc4.1 @ thor: 158.456, 158.344 nupsi
+
+gcc 4.1 @ osiris: 208.122 nupsi (why different from tefnut?)
+intel91 @ osiris: 170.613 nupsi 
+
+intel91 @ maat: 148.302 nupsi
+gcc 4.1 @ maat: 189.536 nupsi
+
+
+testing different configurations (gcc 4.1.0)
+
+benchmarkHeat3d
+                         tefnut          thor       brahma 
+GNUDEBUG                 13.5082       11.0561      7.18142  
+GNUOPT                  215.824       184.322      99.9824 
+GNUOPT -march=nocona    236.122       204.065      99.2901
+GNUOPT -march=opteron   215.648       184.308      99.9856
+
+sparsebench
+                         tefnut          thor       brahma
+GNUDEBUG                 16.6074       13.7515      8.9009   
+GNUOPT                  150.013       125.632     102.595  
+GNUOPT -march=nocona    157.695       130.671      99.6889
+GNUOPT -march=opteron   151.449       126.179     103.933 
+
+tuisto, GNUOPT -march=nocona 
+benchmarkHeat3d single job: approx 242
+                  two jobs  : 227.444
+
+sparsebench       single job: 196.646
+                  two jobs  : 158.175

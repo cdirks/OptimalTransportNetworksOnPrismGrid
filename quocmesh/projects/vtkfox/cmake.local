@@ -1,0 +1,4 @@
+# This seems to be the only way to silence the deprecate warnings caused by the VTK 5 headers.
+IF ( CMAKE_COMPILER_IS_GNUCXX )
+  ADD_DEFINITIONS ( -Wno-deprecated )
+ENDIF ( CMAKE_COMPILER_IS_GNUCXX )

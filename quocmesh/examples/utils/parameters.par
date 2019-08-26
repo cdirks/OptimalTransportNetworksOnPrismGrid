@@ -1,0 +1,4 @@
+# Comment
+num_steps               10
+alpha                   0.25
+filename                out.txt

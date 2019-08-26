@@ -1,0 +1,10 @@
+//! @dir
+//!
+//! @brief Searches root of the system @f$F(x,y) = (x + \cos y, y - \sin x)@f$.
+//!
+//! Searches root of the system @f$F(x,y) = (x + \cos y, y - \sin x)@f$.
+//! The configuration is read from a parameter file.
+//! Note that NewtonIterationBase cannot be endowed with a simple Op as solver,
+//! but requires an IterativeInverseOp.
+//!
+//! @author von Deylen

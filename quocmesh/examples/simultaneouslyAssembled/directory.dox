@@ -1,0 +1,12 @@
+//! @dir
+//!
+//! @brief a small example program for the .... (drum roll) SimultaneouslyAssembledLinCombOp!
+//!
+//! a small example program for the .... (drum roll) SimultaneouslyAssembledLinCombOp!
+//! This operator is similar to the standard LinCombOp, but the whole assembly is done within
+//! one traverse of the grid. I.e. in each element the contribution of each operator is computed
+//! and added to the matrix. This is good if the traverse of the grid is expensive (like in the
+//! rle-structure), but even for the simple quocmesh data structure it is faster if more than one
+//! operator contributes to be assembly.
+//!
+//! @author Nemitz

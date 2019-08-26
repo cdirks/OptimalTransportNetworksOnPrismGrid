@@ -1,0 +1,23 @@
+atree_file	trees/a_bif.tree
+vtree_file	trees/v_bif.tree
+outfilenames	output/profile_%04d.eps
+datafilenames	output/data_%04d.dat
+
+level_vessels	7
+
+num_timesteps	50
+save_every	10
+
+cos_denom	60
+
+xang_deg	30.0
+yang_deg	0.0
+zang_deg	0.0
+zzoom		0.25
+
+color_scale	0.95
+
+cg_epsilon	1e-16
+max_cg_iter	200
+solverquiet	1
+

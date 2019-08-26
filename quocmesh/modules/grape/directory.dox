@@ -1,0 +1,14 @@
+//! @dir
+//! @brief Using grape module.
+//! See Module Documentation @ref grapedoc.
+
+/** \page grapedoc Using grape module
+ *
+ * Some grape programs - including examples - can be found in: tools/grape
+ *
+ * For a very first usage example have a look at: tools/grape/scalar2d.cpp 
+ *
+ * <a href="http://numod.ins.uni-bonn.de/grape/MANUAL/manual/manual.html">GRAPE 5.3 documentation</a>,
+ * <a href="http://numod.ins.uni-bonn.de/grape/MANUAL/hmeshdoc/index.html">GRAPE HMesh documentation</a>
+ *
+ */

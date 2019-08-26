@@ -1,0 +1,69 @@
+# this program saves a cutout from a quocmesh 3d data set
+# in another scalarArray3d.
+
+# the level of the destination scalarArray:
+destLevel 8
+
+# the size of the cutout of the data in the source array
+SourceSizeX 257 
+SourceSizeY 257
+SourceSizeZ 200 
+
+# the position of the cutout in the source-array
+SourceOffsetX 140
+SourceOffsetY 145
+SourceOffsetZ 127
+
+# the position of the cutout in the destination-array
+DestOffsetX 0
+DestOffsetY 0
+DestOffsetZ 50
+
+# add an offset to the scalarArray (e.g. to get a 0-isosurface),
+# this is done at the very end, after a possible scaling.
+offset 0
+
+# do a thresholding? (yes = 1, no = 0)
+doThreshold 0
+# if yes then set the threshold itself (copy only data in [thrLower, thrUpper], else set to 0)
+thresholdLower 0.3
+thresholdUpper 0.7
+
+# saveOnly01 means no grey values, but either 0 or 1 is stored
+saveOnly01 0
+
+# scaleTo0_1 means the grey values are scaled to the interval [0,1],
+# this is done after copying, but before adding a possible offset.
+scaleTo0_1 0
+
+# filenames
+loadName ../Data/MoreDicomTests/Patient6_MR/out.raw
+saveName ../Data/MoreDicomTests/Patient6_MR/Patient6_257_2.bz2
+
+#loadName ../Data/MoreDicomTests/Patient4_MR/Patient4_513.raw
+#saveName ../Data/MoreDicomTests/Patient4_MR/Patient4_257.bz2
+
+#loadName ../Data/MoreDicomTests/Patient1_MR/Out1024.raw
+#saveName ../Data/MoreDicomTests/Patient1_MR/Patient1_513_Cutout.bz2
+
+#loadName ../Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150z.raw.bz2
+#saveName ../Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Cut.bz2
+
+#loadName ../Data/Patients/Patient1/patient1_257.bz2
+#saveName ../Data/Patients/Patient1/Patient2CutOut_Scale01.bz2
+
+#loadName ../Data/Patients/Patient2/Patient2_513_Scaled01.bz2
+#saveName ../Data/Patients/Patient2/Patient2CutOut_Scale01.bz2
+
+#loadName ../Data/MRAVolume/MRA_150.bz2
+#saveName ../Data/MRAVolume/MRACutOutThr70_Scale01.bz2
+
+#loadName ../Data/MoreDicomTests/Patient1_MR/patient1ref.raw
+#saveName ../Data/MoreDicomTests/Patient1_MR/patient1refCutOut.bz2
+
+#loadName ../Data/MoreDicomTests/Patient2_MR/Patient150z/Patient2_513_150.raw
+#saveName ../Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150zCutOut.bz2
+
+#loadName ../Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_75z.raw
+#saveName ../Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75zCutOut.bz2
+

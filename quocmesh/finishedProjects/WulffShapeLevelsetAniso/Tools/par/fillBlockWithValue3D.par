@@ -1,0 +1,17 @@
+# the coordinates of the block to be filled
+x1 0
+x2 257
+y1 0
+y2 257
+z1 0
+z2 45
+
+# the value which has to be written into the block
+fillValue 0.
+
+# file-params
+#inputImage ../Data/Dicom257/DicomBlock257Thr100.bz2
+#outputImage ../Data/Dicom257/DBlock257Thr100DeletedBlock.bz2
+
+inputImage ../Data/Dicom257/oliver.raw
+outputImage ../Data/Dicom257/DataCutOut.bz2

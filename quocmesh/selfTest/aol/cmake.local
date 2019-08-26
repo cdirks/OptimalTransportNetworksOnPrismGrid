@@ -1,0 +1,1 @@
+QUOC_ADD_TEST_FROM_CPP_BASENAME ( selfTest )

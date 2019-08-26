@@ -1,0 +1,139 @@
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Compiler version       : g++ (GCC) 4.3.0
+Date and time          : Fri Apr  9 11:51:15 CEST 2010
+Quocmesh revision      : 25151
+Compilation flags      : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/quoc
+ -I./modules/bem -I./modules/grape -O3 -fmessage-length=0 -DGNU -Wcast-qual -Wall
+ -Wextra -Wold-style-cast -Woverloaded-virtual -Wno-conversion -fPIC -Wdisabled-optimization -funroll-loops
+ -msse2 -DUSE_SSE -march=native -ansi -pedantic -DUSE_LIB_PNG -DUSE_LIB_BZ2
+ -DUSE_LIB_FFTW -DDO_NOT_USE_VECTORMANAGER -fopenmp -I/home/prog/ahmed-64/include -I/home/prog/grape-64/ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_GRAPE
+
+
+Computer name          : eolos
+CPU model              : Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz
+Clock speed in MHz     : 5 x 1596.000,  11 x 2661.000
+Number of cores        : 16
+Max. number of threads : ***
+Main memory in kB      : 49464780
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+unlimited
+selfTest/bem/dirichlet                                    |      256 |      960
+tools/benchmark/benchmarkHeat3d                           |      147 |     1020
+tools/benchmark/sparsebench                               |      206 |      272
+8
+selfTest/bem/dirichlet                                    |      322 |      911
+tools/benchmark/benchmarkHeat3d                           |      278 |     1033
+tools/benchmark/sparsebench                               |      238 |      276
+4
+selfTest/bem/dirichlet                                    |      337 |      758
+tools/benchmark/benchmarkHeat3d                           |      381 |      892
+tools/benchmark/sparsebench                               |      239 |      261
+2
+selfTest/bem/dirichlet                                    |      342 |      559
+tools/benchmark/benchmarkHeat3d                           |      462 |      737
+tools/benchmark/sparsebench                               |      252 |      264
+1
+selfTest/bem/dirichlet                                    |      342 |      342
+tools/benchmark/benchmarkHeat3d                           |      454 |      454
+tools/benchmark/sparsebench                               |      247 |      247
+
+
+Computer name          : ehea
+CPU model              : Intel(R) Xeon(R) CPU           E5530  @ 2.40GHz
+Clock speed in MHz     : 8 x 2395.000
+Number of cores        : 8
+Max. number of threads : ***
+Main memory in kB      : 24690244
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+unlimited
+selfTest/bem/dirichlet                                    |      209 |      699
+tools/benchmark/benchmarkHeat3d                           |      160 |      803
+tools/benchmark/sparsebench                               |      201 |      252
+4
+selfTest/bem/dirichlet                                    |      284 |      651
+tools/benchmark/benchmarkHeat3d                           |      307 |      806
+tools/benchmark/sparsebench                               |      226 |      251
+
+
+Computer name          : hydra
+CPU model              : Dual-Core AMD Opteron(tm) Processor 8222
+Clock speed in MHz     : 12 x 1000.000,  4 x 3000.000
+Number of cores        : 16
+Max. number of threads : ***
+Main memory in kB      : 264159804
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+unlimited
+selfTest/bem/dirichlet                                    |      135 |      211
+tools/benchmark/benchmarkHeat3d                           |       29 |      247
+tools/benchmark/sparsebench                               |       68 |      130
+4
+selfTest/bem/dirichlet                                    |      152 |      226
+tools/benchmark/benchmarkHeat3d                           |       70 |      189
+tools/benchmark/sparsebench                               |       98 |      118
+1
+selfTest/bem/dirichlet                                    |      141 |      141
+tools/benchmark/benchmarkHeat3d                           |      132 |      132
+tools/benchmark/sparsebench                               |      120 |      120
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results
+--------------------------------------------------------------------------------
+
+Computer name      : tuisto
+CPU model          : Intel(R) Core(TM)2 CPU          6600  @ 2.40GHz
+Clock speed in MHz : 2394.050
+Number of cores    : 2
+Main memory in kB  : 3984632
+Compiler version   : g++ (GCC) 4.3.0
+Date and time      : Fri Jan 22 16:03:33 CET 2010
+Quocmesh revision  : 24061
+Compilation flags  : g++ -c foo.cpp -o foo.o -I./modules/aol
+ -I./modules/quoc -I./modules/bem -I./modules/grape -fmessage-length=0 -DGNU -fPIC -march=native
+ -msse3 -mfpmath=sse -DUSE_SSE -funroll-loops -ansi -pedantic -Wall
+ -W -Wextra -Woverloaded-virtual -Wcast-qual -Wold-style-cast -Wno-conversion -Wdisabled-optimization
+ -DUSE_LIB_PNG -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -DDO_NOT_USE_VECTORMANAGER -fopenmp -O3 -I/home/prog/ahmed-64/include
+ -I/home/prog/grape-64/ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_GRAPE
+
+benchmark program                                         |    nupsi |    wupsi
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      223 |      352
+tools/benchmark/benchmarkHeat3d                           |      167 |      280
+tools/benchmark/sparsebench                               |      160 |      176
+
+
+
+--------------------------------------------------------------------------------
+                               Benchmark results                                
+--------------------------------------------------------------------------------
+
+Computer name      : brahma
+CPU model          : AMD Opteron (tm) Processor 854
+Clock speed in MHz : 1797.613                      
+Number of cores    : 4                             
+Main memory in kB  : 65813200                      
+Compiler version   : g++ (GCC) 4.3.0               
+Date and time      : Mon Jan 25 09:09:36 CET 2010  
+Quocmesh revision  : 24081                         
+Compilation flags  : g++ -c foo.cpp -o foo.o -I./modules/aol -I./modules/quoc 
+ -I./modules/bem -I./modules/grape -fmessage-length=0 -DGNU -fPIC -march=native -msse3 
+ -mfpmath=sse -DUSE_SSE -funroll-loops -ansi -pedantic -Wall -W                        
+ -Wextra -Woverloaded-virtual -Wcast-qual -Wold-style-cast -Wno-conversion -Wdisabled-optimization -DUSE_LIB_PNG 
+ -DUSE_LIB_BZ2 -DUSE_LIB_FFTW -DDO_NOT_USE_VECTORMANAGER -fopenmp -O3 -I/home/prog/ahmed-64/include -I/home/prog/grape-64/ 
+ -DUSE_EXTERNAL_AHMED -DUSE_EXTERNAL_GRAPE                                                                                 
+
+benchmark program                                         |    nupsi |    wupsi 
+--------------------------------------------------------------------------------
+selfTest/bem/dirichlet                                    |      121 |      121 
+tools/benchmark/benchmarkHeat3d                           |      112 |      112 
+tools/benchmark/sparsebench                               |       91 |       91 

@@ -1,0 +1,29 @@
+destDirectory <path>
+averageName <savename>.ply
+averageDataStem data/<stem>
+
+fixBoundary 1
+
+numOfAvergageData 3
+numOfDescentSteps 500
+stopCriterion 1e-8
+
+solverType 2
+LagrangeSetup 1
+# parallelization needs more memory!
+parallelize 1
+
+bendWeight 1.0
+tangWeight 1.0
+lengthWeight 1.0
+volWeight 1.0
+
+logConsoleOutput 0
+showConsoleOutput 1
+
+# initialize with linear average of input shapes
+initializeLinearly 1
+
+# load initialization
+#initialAverage <filename>.ply
+

@@ -1,0 +1,6 @@
+convert -crop 1024x1024+0+0 $i $i.png
+convert -geometry 50% -quality 95 $i.png $i:r.jpg
+ls $i
+end
+
+mencoder "mf://*.jpg" -mf fps=25 -o ellam_split.avi -ovc lavc -lavcopts vcodec=msmpeg4v2

@@ -1,0 +1,17 @@
+reference ../testdata/lego-classified.png 
+template ../testdata/lego-classified-trans-inv.png
+saveDirectory results/
+
+# lambda weights the deformation regularization term
+lambda         20.0
+# lambdaFactor scales lambda dependening on the current level: On level d, lambda is multiplied by pow ( lambdaFactor, stopLevel - d )
+lambdaFactor   1
+beta_hist      1.0
+numberOfIntensityLevels 6
+ 
+
+startLevel 4
+stopLevel 8
+precisionLevel 8
+
+checkboxWidth 32

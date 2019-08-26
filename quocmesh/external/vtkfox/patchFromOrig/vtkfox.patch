@@ -1,0 +1,82 @@
+--- CMakeLists.txt	2010-07-01 11:14:30.327496376 +0200
++++ CMakeLists.txt	2010-07-01 11:05:32.051495609 +0200
+@@ -7,12 +7,29 @@
+ 	SET(FOX_INCS "-Ic:/devel/include/fox-1.4")
+ 	SET(FOX_LIBS "c:/devel/lib/FOX-1.4.lib")	
+ ELSE (WIN32)
++	EXEC_PROGRAM("uname" ARGS "-i" OUTPUT_VARIABLE PROCESSOR)
++
+ 	FIND_PROGRAM(FOX_CONFIG fox-config)
+ 
+-	SET(FOX_INCS "`${FOX_CONFIG} --cflags`")
+-	SET(FOX_LIBS "`${FOX_CONFIG} --libs`")
++	IF(DEFINED ENV{FOXDIR})
++		SET(FOX_BASE $ENV{FOXDIR})
++		SET(FOX_INCS "-I${FOX_BASE}/include/fox-1.6 -I${FOX_BASE}/include")
++	ELSE(DEFINED ENV{FOXDIR})
++		IF(PROCESSOR MATCHES "x86_64")
++			MESSAGE ("64bit")
++			SET(FOX_BASE "/home/prog/fox-toolkit-64")
++		ELSE(PROCESSOR MATCHES "x86_64")
++			MESSAGE ("32bit")
++			SET(FOX_BASE "/home/prog/fox-toolkit-32")
++		ENDIF(PROCESSOR MATCHES "x86_64")
++		SET(FOX_INCS "-I${FOX_BASE}/include/fox-1.6/")
++	ENDIF(DEFINED ENV{FOXDIR})
++	SET(FOX_LIBS "-L${FOX_BASE}/lib -lFOX-1.6")	
+ ENDIF (WIN32)
+ 
++MESSAGE(${FOX_INCS})
++MESSAGE(${FOX_LIBS})
++
+ SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${FOX_INCS}")
+ 
+ SUBDIRS(src tests)
+--- src/FXVTKCanvas.cpp	2010-07-01 11:14:30.323496198 +0200
++++ src/FXVTKCanvas.cpp	2010-07-01 11:05:32.051495609 +0200
+@@ -264,9 +264,20 @@
+ long FXVTKCanvas::onKeyboard(FXObject *obj, FXSelector sel, void *data)
+ {
+ 	FXEvent *event = (FXEvent*)data;
+-	
+-	//fxmessage("keypress: %s %d %d\n", event->text.text(), event->state, event->code);
+-	
++  	
++  FXAccelTable* accelTable = NULL;
++  
++  FXWindow *p = getParent();
++  while ( p->getParent() != NULL && accelTable == NULL ) {
++    accelTable = p->getAccelTable();
++    p = p->getParent();
++  }
++ 
++// 	fxmessage("keypress: %s %d %d\n", event->text.text(), event->state, event->code);
++  if ( accelTable ) {
++    accelTable->tryHandle(this,sel,data);
++  }
++      
+ 	if (event->text != FXString::null)
+ 	{
+ 		_fxrwi->SetEventInformationFlipY(event->win_x, event->win_y, event->state & CONTROLMASK, event->state & SHIFTMASK, event->code, 1);
+--- tests/cone.cpp	2010-07-01 11:14:30.327496376 +0200
++++ tests/cone.cpp	2010-07-01 11:05:32.051495609 +0200
+@@ -42,7 +42,7 @@
+ 		
+ 		long onColor(FXObject *obj, FXSelector sel, void *data)
+ 		{
+-			FXColor color = (FXColor)data;
++			FXColor color = (FXColor)(FXuval)data;
+ 			coneActor->GetProperty()->SetColor(FXREDVAL(color) / 255.0, FXGREENVAL(color) / 255.0, FXBLUEVAL(color) / 255.0);
+ 			
+ 			return 1;
+--- tests/imgsurf.cpp	2010-07-01 11:14:30.323496198 +0200
++++ tests/imgsurf.cpp	2010-07-01 11:05:32.084223376 +0200
+@@ -38,7 +38,7 @@
+ 			create_pipeline(canvas->getInteractor());
+ 		}
+ 		
+-		Window::~Window()
++		~Window()
+ 		{
+ 			data->Delete();
+ 		}

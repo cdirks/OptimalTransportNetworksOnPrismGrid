@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief Demonstration of some useful features that are not related to numerics
+//!
+//! utilities.cpp: demonstration how certain aol classes can be used to create fancy shell output, stop computation time, create a parameter parser, etc. 
+//! pipeFile.cpp: shows how to unzip the file before using it. 
+//!
+//! @author Schwen, Droske
+

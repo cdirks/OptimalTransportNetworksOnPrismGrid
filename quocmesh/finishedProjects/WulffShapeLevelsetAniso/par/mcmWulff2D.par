@@ -1,0 +1,56 @@
+# time-dependend stuff
+tau         0.5
+epsilon     1
+
+# other parameters
+graph       1
+lambda      2.5
+
+# regularization parameter
+# mu  100
+
+# save every "timeOffset" timestep
+timeOffset  50
+timesteps   1001
+
+#image Data2D/SineLandscape/sineLandscape8.bz2
+#saveName Data2D/SineLandscape/sineLandscape8_Tau005_EpsH
+
+image Data2D/CircleNick/noisyCircleNick8.bz2
+saveName Data2D/CircleNick/SameNormHex_Delta4H_NC8_Tau05
+
+#image Data2D/CircleNick/circleNick8SmallNoise.bz2
+#noisyCircleNick8.bz2
+#saveName Data2D/CircleNick/Blending_NoisyCircle8_Tau1
+#Plus50000_noisyCircleNick8_Tau1
+
+#image Data2D/Abs/noisyRotated05_MinusAbsX8.bz2
+#saveName Data2D/Abs/noisyRotated05_MinusAbsX8_Tau02
+
+#image Data2D/Abs/MinusAbsX8.bz2
+#saveName Data2D/Abs/MinusAbsX8_Tau005
+
+#image ~/input/2D/sphere/PlateauSphereSmooth8.bz2
+#saveName Data2D/Sphere/PlateauSphereSmooth
+
+
+#image Data2D/Nick/noisyNick7.bz2
+#saveName Data2D/Nick/noisyNickKonvexerKegel
+
+#image Data2D/Nick/cornerNickSmoothed_129.bz2
+#saveName Data2D/Nick/timestep001CornerNickSmoothConeNonConvex
+
+#image Data2D/Circle/dist7.pgm
+#saveName Data2D/Circle/Circle2Pentagon
+
+#image Data2D/Nick/noisyNick7.bz2
+#saveName Data2D/Nick/nickNoisy_Diamond
+
+#image Data2D/Circle/dist7.pgm
+#saveName Data2D/Circle/PleaseRenameMe
+
+#image Data2D/L1Norm/L1SD.pgm
+#saveName Data2D/L1Norm/L1Norm2Circle
+
+#image Data2D/Circle/dist7.pgm
+#saveName Data2D/Circle/Sphere2LpNorm_p4

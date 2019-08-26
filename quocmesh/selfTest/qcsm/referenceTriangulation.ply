@@ -1,0 +1,48 @@
+ply
+format ascii 1.0
+comment writen by method TriangMesh::saveAsUDPLY
+element vertex 14
+property float x
+property float y
+property float z
+element face 24
+property list uchar int vertex_index
+end_header
+0.5 0.2975 0.2975 
+0.5 0.5 0.095 
+0.2975 0.5 0.2975 
+0.095 0.5 0.5 
+0.5 0.095 0.5 
+0.635 0.365 0.365 
+0.7025 0.2975 0.5 
+0.905 0.5 0.5 
+0.2975 0.7025 0.5 
+0.5 0.905 0.5 
+0.5 0.5 0.905 
+0.7025 0.5 0.7025 
+0.365 0.635 0.635 
+0.5 0.7025 0.7025 
+0 1 2 
+0 2 3 
+0 3 4 
+0 5 1 
+0 6 5 
+0 4 6 
+5 7 1 
+5 6 7 
+2 1 8 
+2 8 3 
+1 9 8 
+1 7 9 
+4 3 10 
+4 10 6 
+6 11 7 
+6 10 11 
+3 8 12 
+3 12 10 
+8 9 13 
+8 13 12 
+10 12 13 
+7 13 9 
+7 11 13 
+10 13 11 

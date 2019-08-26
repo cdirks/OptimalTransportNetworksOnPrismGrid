@@ -1,0 +1,22 @@
+# time-dependend stuff
+
+tau         0.05
+timesteps   51
+timeOffset  5
+numberSaveFirstPics 5
+
+# file stuff
+
+#loadName ../Data/HorizLine/HLClean5.bz2
+#saveName ../Data/HorizLine/AnisoDiffHL5
+
+#loadName ../Data/HalfSpace/HalfSpaceNoisy5.bz2
+#saveName ../Data/HalfSpace/XLevelSetNoisyAnisoDiffHalfSpace5
+
+loadName ../testdata/Helix6.bz2
+saveName PeronaMalikLevelSetHelix6
+
+#loadName Data/Dicom257/DBlock257Thr100DeletedBlock.bz2
+#saveName Data/Dicom257/DBlock257Thr100DeletedBlockSmooth.bz2
+
+                                                     

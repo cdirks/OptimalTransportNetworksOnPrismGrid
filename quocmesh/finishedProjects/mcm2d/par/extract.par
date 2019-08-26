@@ -1,0 +1,30 @@
+# data stuff
+
+#image pics/Rekonstruktion/lenaCutOut.pgm
+#mask  pics/Rekonstruktion/lenaCutOutBigMask.pgm
+#startImgSaveName pics/Rekonstruktion/lenaCutOutNoisyBG.pgm
+#boundaryMaskSaveName pics/Rekonstruktion/lenaBoundaryMask.pgm
+
+#image pics/Rekonstruktion/square3.pgm
+#mask  pics/Rekonstruktion/square3Mask.pgm
+#startImgSaveName pics/Rekonstruktion/square3StartImgNoisyBG.pgm
+#boundaryMaskSaveName pics/Rekonstruktion/square3BoundaryMask.pgm
+
+#image pics/Rekonstruktion/lena.pgm
+#mask  pics/Rekonstruktion/lenaMaske3.pgm
+#startImgSaveName pics/Rekonstruktion/lenaStartImg3.pgm
+#boundaryMaskSaveName pics/Rekonstruktion/lenaBoundaryMask3.pgm
+
+image pics/Rekonstruktion/boatsCutOut.pgm
+mask  pics/Rekonstruktion/boatsCutOutMask.pgm
+startImgSaveName pics/Rekonstruktion/boatsReconstr.pgm
+boundaryMaskSaveName pics/Rekonstruktion/boatsBoundaryMask.pgm
+
+# more params
+level 8
+gridSize 257
+
+# backgroundType can be: 0=constant value (backgroundValue), 1=white noise
+backgroundType 1
+
+backgroundValue 128

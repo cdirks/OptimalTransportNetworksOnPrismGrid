@@ -1,0 +1,9 @@
+//! @dir
+//!
+//! @brief Quoc multigrid and AMG
+//!
+//! Examples for using the different quoc multigrid classes and the
+//! boomerAMG (algebraic multigrid solver of the hypre library; 
+//! requires corresponding external)
+//!
+//! @author Schwen

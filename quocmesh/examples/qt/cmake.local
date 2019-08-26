@@ -1,0 +1,37 @@
+IF ( WIN32 )
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES WIN32_EXECUTABLE TRUE )
+ENDIF()
+
+IF ( APPLE )
+  # Tell cmake to create an app instead of a normal executable.
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE TRUE )
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "Quoc Image Viewer" )
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_INFO_STRING "Quoc Image Viewer - Version ${QUOCMESH_VERSION}" ) 
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_BUNDLE_VERSION ${QUOCMESH_VERSION} ) 
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_GUI_IDENTIFIER "de.rwth-aachen.aices.qcImView" ) 
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_COPYRIGHT "Copyright 2014 QuocMesh Collective" )
+  IF( MERCURIAL_FOUND )
+    SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_SHORT_VERSION_STRING ${Quocmesh_HG_CHANGESET} )
+    SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_LONG_VERSION_STRING "Hg changeset ${Quocmesh_HG_CHANGESET}" )
+  ENDIF ( MERCURIAL_FOUND )
+  # Set the icon ...
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_ICON_FILE qcImView.icns )
+  # ... and copy it into the bundle.
+  FILE ( COPY qcImView.icns DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/qcImViewMain.app/Contents/Resources/ )
+
+  # Unfortunately, cmake doesn't allow custom plist entries, but OS X requires certain entries 
+  # cmake's plist template  lacks in order to make the app work properly. For instance, the
+  # NSPrincipalClass entry is necessary to register the app as default handler for a file
+  # extension. Thus, we supply a custom template here that is just an extended version of the
+  # cmake template.
+  SET_TARGET_PROPERTIES ( examples_qt_qcImViewMain PROPERTIES MACOSX_BUNDLE_INFO_PLIST ${CMAKE_CURRENT_SOURCE_DIR}/MacOSXBundleInfo.plist.in )
+
+  # This should install all necessary dependencies in the .app directory,
+  # so that the app hopefully can be copied to another machine.
+  SET ( APPS ${CMAKE_CURRENT_BINARY_DIR}/qcImViewMain.app/Contents/MacOS/qcImViewMain ) 
+  SET ( DIRS ${CMAKE_BINARY_DIR} )
+  INSTALL ( CODE "
+     include(BundleUtilities)
+     fixup_bundle(\"${APPS}\"   \"\"   \"${DIRS}\")
+     " COMPONENT Runtime )
+ENDIF()

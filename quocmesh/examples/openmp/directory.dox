@@ -1,0 +1,7 @@
+//! @dir
+//!
+//! @brief Illustrates the usage of openmp for parallelization.
+//!
+//! Illustrates how to use openmp for parallelization. This requires -fopenmp (compiler flag) and -lgomp (linker flag).
+//!
+//! @author Schwen

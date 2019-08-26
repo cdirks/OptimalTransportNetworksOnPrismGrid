@@ -1,0 +1,14 @@
+# time-dependend stuff
+
+tau         0.5
+timesteps   101
+
+# save every "timeOffset" timestep
+timeOffset  10
+ReinitializeOffset 1
+
+
+image Data/Sphere/SphereOrig6.bz2
+#saveName Data/Wulffshapes/GrowingRotatedLInfNormDelta00001
+saveName Deleteme
+

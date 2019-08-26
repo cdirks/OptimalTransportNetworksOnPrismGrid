@@ -1,0 +1,8 @@
+/** \namespace nb
+ *  \brief Narrow band methods.
+ *  See Module Documentation \ref narrowbanddoc.
+ */
+
+//! @dir
+//! @brief Narrow band methods.
+//! See Module Documentation @ref narrowbanddoc.

@@ -1,0 +1,40 @@
+# this program saves a cutout from a quocmesh 3d data set
+# in another scalarArray3d.
+
+# the level of the destination scalarArray:
+destLevel 7
+
+# the size of the cutout of the data
+SourceSizeX 129
+SourceSizeY 129
+SourceSizeZ 129
+
+# the position of the cutout in the source-array
+SourceOffsetX 127
+SourceOffsetY 65
+SourceOffsetZ 10
+
+# the position of the cutout in the destitnation-array
+DestOffsetX 0
+DestOffsetY 0
+DestOffsetZ 0
+
+# add an offset to the scalarArray (e.g. to get a 0-isosurface)
+offset 0
+
+# do a thresholding? (yes = 1, no = 0)
+doThreshold 0
+# if yes then set the threshold itself (copy data in [thrLower, thrUpper])
+thresholdLower 90
+thresholdUpper 255
+
+# saveOnly01 means no grey values, but only 0 or 1 is stored
+saveOnly01 0
+
+# scaleTo0_1 means the grey values are scaled to the interval [0,1]
+scaleTo0_1 1
+
+# filenames
+
+loadName ../Data/Dicom257/CutOut.bz2
+saveName ../Data/Dicom257/TolgaCutOutScale01.bz2

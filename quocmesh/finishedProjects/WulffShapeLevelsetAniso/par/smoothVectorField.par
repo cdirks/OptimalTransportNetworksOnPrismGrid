@@ -1,0 +1,48 @@
+# number of the smoothing method ( Median = 0, GaussianMask = 1, HeatEquation = 2,
+# Tolga's method (biggest eigenvector of the smoothed tensorproduct) = 3 )
+method 3
+
+
+# number of smoothing steps
+numberSteps 1
+
+# parameters for the heat equation
+tau 0.5
+
+timesteps 1
+
+# file-stuff
+
+#loadName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_Axis
+#saveName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_AxisSmooth
+
+loadName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Axis
+saveName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_AxisSmooth
+
+#loadName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150zCutOut55_Axis
+#saveName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150zCutOut55_AxisSmooth
+
+#loadName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55_Axis
+#saveName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_75z/Patient3Cutout_75z_Thr55_AxisSmooth
+
+#loadName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr75_Axis
+#saveName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr75_AxisSmooth
+
+#loadName Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr75_Axis
+#saveName Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr75_AxisSmooth
+
+#loadName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_Axis
+#saveName Data/Patients/Patient1/Threshold0_225/patient1_257_threshold_0225_AxisSmooth
+
+#loadName Data/MRAVolume/MRACutOutThr50/MRACutOutThr50_01_Axis
+#saveName Data/MRAVolume/MRACutOutThr50/MRACutOutThr50_01_AxisSmooth
+
+#loadName Data/Torus/rotation6
+#saveName Data/Torus/HEqRotation6
+
+#loadName Data/Dicom257/TolgaCutOutThr100Axis
+#saveName Data/Dicom257/TolgaCutOutThr100AxisSmooth
+
+#loadName Data/MRAVolume/MRA_LowRes_CutOutThr75Axis
+#saveName Data/MRAVolume/MRA_LowRes_CutOutThr75AxisSmooth
+

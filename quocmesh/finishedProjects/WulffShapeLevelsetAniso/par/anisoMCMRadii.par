@@ -1,0 +1,80 @@
+# time-dependend stuff
+
+tau         1.0
+timesteps   201
+
+# determine a factor with which the radii are multiplied with
+radiusFactor  5
+
+# save every "timeOffset" timestep
+timeOffset  20
+
+# the length of the ellipsoid  (half-axis b and c are 1.)
+aHalfAxis 100
+
+# must be big enough for stability (see Dziuk/Deckelnick)
+lambda 81.5 
+
+# whether a narrowband should be used or not (only usable if useRadii is set)
+useNarrowBand 1
+
+# use the correction term that accelerates the growth of the vessels?
+accelerateGrowth 0
+
+# whether the radius-information shall be used or not
+# notice: if useRadii is 0, then you CAN'T use the narrowBand
+useRadii 1
+
+# ------------ Data-stuff ------------------------------
+
+image Data/MRAVolume/MRACutOutThr70_Scale01SD.bz2
+RadiiName Data/MRAVolume/MRACutOutThr70_Scale01Radii.bz2
+loadRotationName Data/MRAVolume/MRACutOutThr70AxisSmooth
+saveName Data/MRAVolume/MRACutOutThr70_Tau1_Lambda81.5
+
+#image Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Tau001_AHA_100_400.bz2
+#Patient6_MR/Patient6_257_Thr65_SD.bz2
+#RadiiName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65Radii.bz2
+#loadRotationName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Axis
+#saveName Data/MoreDicomTests/Patient6_MR/Patient6_257_Thr65_Tau001_AHA_100_Part2
+
+#image Data/Helix/Helix6SmoothSD.bz2
+#RadiiName Data/Helix/Helix6Radii.bz2
+#loadRotationName Data/Helix/Helix6NoisySmoothAxis
+#saveName Data/Helix/TEST_TPCFE_STUFF_Helix
+
+#image Data/MoreDicomTests/Patient1_MR/Threshold0_25/patient1_257_threshold_025_SD.bz2
+#RadiiName Data/MoreDicomTests/Patient1_MR/Threshold0_25/patient1_257_threshold_025_RadiiMax4.bz2
+#loadRotationName Data/MoreDicomTests/Patient1_MR/Threshold0_25/patient1_257_threshold_025_AxisSmooth
+#saveName Data/MoreDicomTests/Patient1_MR/Threshold0_25/patient1_NEW_thr25_Tau001_AHA_100
+
+
+#image Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150zCutOut55_Tau001_300.bz2
+#Patient3_513_150zCutOut55_SD.bz2
+#RadiiName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150zCutOut55_Radii.bz2
+#loadRotationName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3_513_150zCutOut55_AxisSmooth
+#saveName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Plus300_Patient3_513_150zCutOut55_Tau001
+
+#image Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55SD.bz2
+#RadiiName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55Radii.bz2
+#loadRotationName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55_AxisSmooth
+#saveName Data/MoreDicomTests/Patient3_MR_Bel/Pat3_150z/Patient3Cutout_150z_Thr55_Tau001
+
+#image Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95SD.bz2
+#RadiiName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95Radii.bz2
+#loadRotationName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_AxisSmooth
+#saveName Data/MoreDicomTests/Patient2_MR/Patient150z/patient2_257_150z_Thr95_Tau001
+
+#image Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr85SD.bz2
+#RadiiName Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr85_Radii.bz2
+#loadRotationName Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr85_AxisSmooth
+#saveName Data/MoreDicomTests/Patient2_MR/Patient75z/Patient2_257_75z_Thr85_Tau001
+
+#image Data/MRAVolume/MRACutOutThr50/MRACutOutThr50_01SD.bz2
+#RadiiName Data/MRAVolume/MRACutOutThr50/MRACutOutThr50_01_Radii.bz2
+#loadRotationName Data/MRAVolume/MRACutOutThr50/MRACutOutThr50_01_AxisSmooth
+#saveName Data/MRAVolume/MRACutOutThr50/DependentVolumeCorrectionMRACutOutThr50_Tau002
+
+
+
+

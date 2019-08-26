@@ -1,0 +1,18 @@
+# 2 for plane, 6 for cylinder, 10 for sphere
+interfaceType   5
+
+dcMinusValues   { 2 4 }
+
+# -1 for BVP, 100 for time step 1
+problemType     100
+
+level           6
+
+doCFEMG         1
+doCG            1
+doPCG           1
+doAMG           1
+epsilon         1e-16
+
+explicitLevel         3
+numSmooth             3

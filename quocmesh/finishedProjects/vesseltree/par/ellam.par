@@ -1,0 +1,27 @@
+np	 	65
+nd		64
+ne		64
+
+lp		1.0
+ld		1.0
+le		1.0
+
+Ap		1.0
+Ad		0.7071
+Ae		0.7071
+
+vp		0.85
+
+theta		0.6
+
+# thetad = theta, thetae = 1.0 - theta
+
+timesteps	2501
+
+oneovertau 	128
+
+splitting	0
+
+save_every	10
+
+Ce              1.0

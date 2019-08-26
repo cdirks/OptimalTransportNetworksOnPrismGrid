@@ -1,0 +1,33 @@
+maxlevel	10
+length_minrnd	0.2
+LeafRadEst	2.3e-6
+
+length_max	0.25
+length_exp	1.3
+lengthdecrease	0.9
+
+theta		0.3
+eta		0.01
+iota		2.5
+init_point_dist	0.150
+
+save_every	64
+
+MaxScNeNodes	32
+MaxNodeIter	1000
+RootRad		0.006
+
+pointspacing	0.10
+linespacing	0.10
+
+LineThickness 	5000
+
+min_seed	4
+max_seed	5
+
+# minrad		0.002
+# minang		-1.0
+# maxang		1.0
+# maxtryiter	50
+# minspace	0.01
+

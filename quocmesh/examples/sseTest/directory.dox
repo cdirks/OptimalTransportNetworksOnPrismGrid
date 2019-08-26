@@ -1,0 +1,5 @@
+//! @dir
+//!
+//! @brief Small example on how to use SSE for vectorization.
+//!
+//! @author Berkels

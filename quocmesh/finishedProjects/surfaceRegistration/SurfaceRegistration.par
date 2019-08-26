@@ -1,0 +1,7 @@
+templateDataFile E:/Bonn/TOFDataSynthetic/sphere_0.33/sphere_0.33.bin
+referenceDataFile E:/Bonn/CTDataSynthetic/sdf.dat
+
+saveDirectory E:/Bonn/SurfaceRegistration
+
+#tOFDimX 204
+#tOFDimY 204
